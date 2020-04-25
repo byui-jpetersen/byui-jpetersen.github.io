@@ -29,7 +29,7 @@ footer {
     border-radius: 10px;
 }
 
-img {
+.profilepic {
     max-width: 25%;
     float: right;
     margin-right: 10px;
