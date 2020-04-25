@@ -1,2 +1,3 @@
 //get lasted date it was updated and populate the tag with the lastupdatedate ID
-document.getElementById("lastupdatedate").textContent = document.lastModified;
+let oLastModif = new Date(document.lastModified)
+document.getElementById("lastupdatedate").textContent = oLastModif;

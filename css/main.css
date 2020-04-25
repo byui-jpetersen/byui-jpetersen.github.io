@@ -29,6 +29,10 @@ footer {
   border-radius: 10px;
 }
 
+main {
+    padding: 2rem;
+}
+
 .profilepic {
   width: 150px;
   height: auto;
