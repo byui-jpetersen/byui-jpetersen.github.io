@@ -1,3 +1,7 @@
+body {
+    background-color: #fff;
+}
+
 header, main, footer {
     max-width: 700px;
     margin: 0 auto;
@@ -11,6 +15,10 @@ header {
 
 h1 {
     color: #fff;
+}
+
+footer {
+    background-color: #134266;
 }
 
 .profilepic {
