@@ -1,0 +1,20 @@
+header, main, footer {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #134266;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #fff;
+}
+
+.profilepic {
+    width: 200px;
+    height: auto;
+    float: right;
+}
