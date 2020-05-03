@@ -1,0 +1,22 @@
+@media only screen and (min-width: 32em) {
+    .gridarea {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+        "header  header  header"
+        "main main main"
+        "footer  footer  footer";
+    }
+
+    header {
+      background-color: darkslategrey;
+      grid-template-columns: 250px 1fr;
+    }
+
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
