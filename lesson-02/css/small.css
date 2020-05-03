@@ -8,7 +8,7 @@ body {
 }
 .gridarea {
   display: grid;
-  grid-gap: 7px;
+  grid-gap: 10px;
   max-width: 960px;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -21,6 +21,7 @@ body {
   color: white;
   border-radius: 15px;
   text-align: left;
+  padding: 12px;
 }
 
 .grid-section:last-child {
@@ -30,6 +31,7 @@ body {
 .grid-image {
   height: auto;
   width: 100%;
+  margin-top:15px;
 }
 
 header,
@@ -60,11 +62,8 @@ h2 {
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 5px;
+  grid-gap: 10px;
   grid-area: main;
-}
-section {
-  padding: 17px;
 }
 
 footer {
