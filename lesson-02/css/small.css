@@ -16,6 +16,9 @@ body {
     "main"
     "footer";
 }
+.section-title {
+margin: 0;
+  }
 .grid-section {
   background-color: darkslategrey;
   color: white;
@@ -52,11 +55,18 @@ header {
   color: white;
 }
 h1 {
+  margin: 10px;
   font-size: 2rem;
   grid-column: span 3;
 }
 h2 {
+	margin: 10px;
   font-size: 1.5rem;
+  grid-column: span 3;
+}
+h3 {
+ margin: 10px;
+  font-size: 1rem;
   grid-column: span 3;
 }
 main {
