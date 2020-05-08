@@ -1,0 +1,75 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  min-width: 325px;
+  text-align: center;
+}
+header {
+  background-color: cadetblue;
+  display: block;
+  margin: 0 auto;
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  color: white;
+}
+nav {
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0px 5px 8px #888888;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #4f5d73;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 0 20px 0;
+}
+section {
+  background-color: rgb(238, 237, 237);
+  padding: 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+footer {
+  background-color: cadetblue;
+  display: block;
+  margin: 0 auto;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: white;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.sitename, .sitepurpose, .sitelogo {
+  text-align: left;
+  margin: 1rem 0 1rem 0;
+}
+
+img {
+  max-width: 200px;
+}
