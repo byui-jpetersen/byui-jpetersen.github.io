@@ -62,15 +62,59 @@ footer {
   font-size: 1.25rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
-.sitename, .sitepurpose, .sitelogo {
+.sitename,
+.sitepurpose,
+.sitelogo {
   text-align: left;
   margin: 1rem 0 1rem 0;
 }
 
 img {
   max-width: 200px;
+}
+
+/* unvisited link */
+footer a:link {
+  color: black;
+}
+
+/* visited link */
+footer a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+footer a:hover {
+  font-weight: bolder;
+}
+
+/* selected link */
+footer a:active {
+  color: black;
+}
+
+/* unvisited link */
+nav a:link {
+  color: white;
+}
+
+/* visited link */
+nav a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+nav a:hover {
+  font-weight: bolder;
+}
+
+/* selected link */
+nav a:active {
+  color: white;
 }
