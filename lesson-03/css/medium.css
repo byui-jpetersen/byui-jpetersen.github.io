@@ -50,4 +50,7 @@ section {
     display: inline;
     width: 100%;
   }
+  .paletteimg {
+    max-width: 600px;
+  }
 }

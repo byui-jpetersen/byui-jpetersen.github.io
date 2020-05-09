@@ -28,4 +28,7 @@
 .card img {
   width: 100%;
 }
+.paletteimg {
+	max-width: 800px;
+  }
 }

@@ -114,6 +114,9 @@ h3 {
 .logo {
   max-width: 200px;
 }
+.paletteimg {
+  max-width: 400px;
+}
 
 /* unvisited link */
 footer a:link {
