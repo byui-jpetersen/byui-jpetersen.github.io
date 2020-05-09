@@ -1,5 +1,5 @@
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Play", sans-serif;
   font-size: 16px;
   display: block;
   align-items: center;
@@ -117,7 +117,35 @@ h3 {
 .paletteimg {
   max-width: 400px;
 }
+.color-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0px;
+}
+.color1 {
+background-color: #006D77;
+color: white;
+}
+.color2 {
+  background-color: #4f5d73;
+  color: white;
+}
+.color3 {
+  background-color: #83C5BE;
+}
+.color4 {
+  background-color:#FFD543;
+}
 
+.typo1 {
+font-family: 'Play', sans-serif;
+}
+.typo2 {
+  font-family: 'Oswald', sans-serif;
+}
+.typo3 {
+  font-family: 'Montserrat', sans-serif;
+}
 /* unvisited link */
 footer a:link {
   color: black;
