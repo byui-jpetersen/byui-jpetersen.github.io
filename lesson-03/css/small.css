@@ -5,7 +5,9 @@ body {
   align-items: center;
   justify-content: center;
   min-width: 325px;
+  max-width: 1080px;
   text-align: center;
+  margin: auto;
 }
 header {
   background-color: cadetblue;
@@ -39,8 +41,10 @@ li a {
   text-decoration: none;
   margin: 20px 0 20px 0;
 }
-section {
+main {
   background-color: rgb(238, 237, 237);
+}
+section {
   padding: 1rem;
 }
 
@@ -67,6 +71,10 @@ h2,
 h3 {
   margin: 0;
 }
+.personasheading {
+  padding: 20px;
+  text-align: left;
+}
 
 .sitename,
 .sitepurpose,
@@ -74,8 +82,36 @@ h3 {
   text-align: left;
   margin: 1rem 0 1rem 0;
 }
+.gridarea {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0px;
+}
+.targetaudience {
+  text-align: left;
+}
+.scenarios {
+  text-align: left;
+}
 
-img {
+.one {
+
+ grid-column: 1;
+ grid-row: 2;
+}
+.two {
+  grid-column: 1;
+  grid-row: 3;
+}
+.heading {
+  text-align: left;
+}
+
+.card img {
+  display: none;
+}
+
+.logo {
   max-width: 200px;
 }
 

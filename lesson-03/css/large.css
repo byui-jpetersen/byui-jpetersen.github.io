@@ -1,4 +1,4 @@
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 1025px) {
 
 	nav ul {
 		display: flex;
@@ -15,4 +15,17 @@
 	h1 {
 		font-size: 2rem;
 	  }
+.card {
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: white;
+  width: 40%;
+  transition: 0.3s;
+  margin: auto 0;
+  text-align: left;
+  padding: 8px;
+}
+.card img {
+  width: 100%;
+}
 }
