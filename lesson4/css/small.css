@@ -48,6 +48,7 @@ header {
 	display: block;
 }
 nav {
+  font-family: "Oswald", sans-serif;
   text-align: center;
   background-color: #4f5d73;
   position: relative;
@@ -63,6 +64,7 @@ main {
   margin: 0 auto;
 }
 section {
+  font-family: "Montserrat", sans-serif;
   padding: 1rem;
   background-color: #83C5BE;
   margin: 0 .5rem .5rem .5rem;
