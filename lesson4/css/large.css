@@ -15,20 +15,7 @@
 	h1 {
 		font-size: 2rem;
 	  }
-.card {
-  display: inline-block;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background-color: white;
-  width: 40%;
-  transition: 0.3s;
-  margin: auto 0;
-  text-align: left;
-  padding: 8px;
-}
-.card img {
-  width: 100%;
-}
-.paletteimg {
-	max-width: 800px;
-  }
+	  section {
+		  margin: .5rem 0 .5rem 0;
+	  }
 }
