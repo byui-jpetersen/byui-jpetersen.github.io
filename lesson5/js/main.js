@@ -1,6 +1,6 @@
 //get lasted date it was updated and populate the tag with the lastupdatedate ID
-var d = new Date();
-var day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const d = new Date();
+const day = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 document.getElementById("currentdate").innerHTML = day[d.getDay()] + ", " + d.getDay() + " " + months[d.getMonth()] + " " + d.getFullYear();
 
@@ -11,3 +11,13 @@ const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation');
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+
+//display banner if it's Friday
+const banner = document.querySelector("pancakes");
+if(d.getDay() == 3) {
+    banner.style.display = "block";
+}
+else {
+    banner.style.display = "none";
+}
+

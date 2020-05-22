@@ -157,6 +157,11 @@ h3 {
 .moto {
   padding: 1rem;
 }
+#pancakes {
+  display: block;
+  min-height: 60px;
+  justify-content: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+}
 
 /* unvisited link */
 footer a:link {
