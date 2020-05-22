@@ -1,0 +1,189 @@
+body {
+  font-family: "Play", sans-serif;
+  font-size: 16px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  min-width: 325px;
+  text-align: center;
+  margin: auto;
+}
+header {
+  background-color:#006D77;
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+.navigation {
+	list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+.navigation a:link {
+	color: black;
+  background-color: #4f5d73;
+}
+.navigation a:visited {
+	color: black;
+}
+.navigation a:hover {
+	color: black;
+  background-color: #FFD543;
+}
+.navigation a:active {
+	color: black;
+  background-color: #FFD543;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+nav {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  background-color: #4f5d73;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0px 5px 8px #888888;
+  width: 100%
+}
+main {
+  max-width: 1080px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+section {
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  margin: 0 .5rem .5rem .5rem;
+
+}
+.heroimg {
+  max-width: 80%;
+  position: relative;
+  padding: 0;
+  max-width: 1080px;
+}
+.heroimage {
+  max-width: 100%;
+}
+.weathersummary {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0px 5px 8px #888888;
+  opacity: 75%;
+}
+.forecastcontainer {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row: 1fr;
+  gap: 0px 10px
+}
+.fiveday {
+  opacity: 90%;
+  background-color: #fff;
+}
+.forecastimgs {
+  max-width: 50px;
+}
+.content {
+  background-color: #83C5BE;
+  box-shadow: inset rgba(0,0,0,.5) 0px 0px 5px 0px;
+}
+.articleimg {
+  float: right;
+  max-width: 300px;
+  padding: 1.25rem;
+}
+.content p {
+  text-align: justify;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+footer {
+  background-color:#006D77;
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: white;
+  font-size: 1.25rem;
+  max-width: 1080px;
+}
+
+h1,
+h2,
+h3 {
+  margin: .5rem;
+}
+
+.logo {
+  max-width: 200px;
+  padding: 1rem;
+}
+.moto {
+  padding: 1rem;
+}
+
+/* unvisited link */
+footer a:link {
+  color: white;
+}
+
+/* visited link */
+footer a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+footer a:hover {
+  font-weight: bolder;
+}
+
+/* selected link */
+footer a:active {
+  color: white;
+}
+
+/* unvisited link */
+nav a:link {
+  color: white;
+}
+
+/* visited link */
+nav a:visited {
+  color: rgb(255, 255, 255);
+}
+
