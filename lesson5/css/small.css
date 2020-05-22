@@ -159,8 +159,11 @@ h3 {
 }
 #pancakes {
   min-height: 60px;   
-  background-color: fuchsia; 
-  color: greenyellow;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+  background-color: greenyellow; 
+  color: fuchsia;
+  font-size: 2rem;   
+  font-weight: bolder;
+  padding-top: 1rem;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 }
 
 /* unvisited link */
