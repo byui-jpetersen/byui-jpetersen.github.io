@@ -133,7 +133,7 @@ section.content.forecast {
 .content p {
   text-align: left;
 }
-section.content.contact {
+.contact-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
