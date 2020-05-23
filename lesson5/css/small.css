@@ -134,6 +134,17 @@ section.content.forecast {
 .content p {
   text-align: left;
 }
+section.content.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div.address {
+  text-align: center;
+}
+h3.co-contact {
+  font-weight: bolder;
+}
 
 p {
   margin: 0 0 1rem;
