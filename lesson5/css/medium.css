@@ -12,7 +12,6 @@
 	.navigation li:first-child {
 		display: none;
 	}
-}
 main {
   margin: 0 auto;
 }
@@ -27,3 +26,4 @@ main {
   section.content.forecast {
 	display: block;
   }
+}

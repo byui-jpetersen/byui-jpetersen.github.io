@@ -4,7 +4,7 @@ body {
   display: block;
   align-items: center;
   justify-content: center;
-  min-width: 325px;
+  min-width: 475px;
   text-align: center;
   margin: auto;
 }
@@ -80,7 +80,7 @@ main {
 section {
   font-family: "Montserrat", sans-serif;
   padding: 1rem;
-  margin: 0 .5rem .5rem .5rem;
+  margin: .5rem 0 .5rem 0;
 }
 .heroimg {
   max-width: 80%;
@@ -99,8 +99,9 @@ section {
   background-color: #fff;
   box-shadow: 0px 5px 8px #888888;
   opacity: 75%;
-  line-height: .65rem;
+  line-height: 1rem;
   margin: 0;
+  font-size: .85rem;
 }
 .forecastcontainer {
   text-align: center;
