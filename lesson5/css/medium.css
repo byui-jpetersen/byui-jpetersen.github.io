@@ -16,3 +16,11 @@
 main {
   margin: 0 auto;
 }
+
+.weathersummary {
+	top: 15px;
+	left: 15px;
+	padding: 15px;
+	line-height: 1rem;
+	margin: 1rem;
+  }
