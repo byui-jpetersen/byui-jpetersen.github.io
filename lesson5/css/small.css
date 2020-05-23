@@ -144,7 +144,9 @@ div.address {
 h3.co-contact {
   font-weight: bolder;
 }
-
+.map-image {
+  max-width: 100%;
+}
 p {
   margin: 0 0 1rem;
 }
