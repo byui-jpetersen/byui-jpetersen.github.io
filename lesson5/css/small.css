@@ -163,6 +163,7 @@ footer {
   color: white;
   font-size: 1.25rem;
   max-width: 1080px;
+  padding: .5rem;
 }
 
 h1,
@@ -172,7 +173,7 @@ h3 {
 }
 
 .logo {
-  max-width: 200px;
+  max-width: 125px;
   padding: 1rem;
 }
 .moto {
