@@ -1,0 +1,42 @@
+@media only screen and (min-width: 700px) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+main {
+  margin: 0 auto;
+}
+
+.weathersummary {
+	top: 10%;
+	left: 3%;
+  }
+  div.weathersummary {
+	  margin: 7px;
+  }
+  section.content.forecast {
+	display: block;
+  }
+  .contact-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+  }
+  h3.co-contact {
+	text-align: left;
+	margin: 0;
+  }
+  div.address {
+	text-align: left;
+	line-height: 2rem;
+  }
+}
