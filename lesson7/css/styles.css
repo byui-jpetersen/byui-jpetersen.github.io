@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    }
+    .images{
+        display: grid;
+        grid-gap: 8px;
+        grid-auto-rows: auto;
+         justify-content: center;
+    }
+    
+       img[data-src] {
+            filter: blur(0.2em);
+          }
+          
+      img{
+            filter: blur(0em);
+            transition: filter 0.5s;
+          }
+        
