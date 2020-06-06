@@ -27,7 +27,7 @@
       <ul class="navigation">
         <li><a class="ham" href="#">&#9776; Menu</a></li>
         <li><a href="#">Home</a></li>
-        <li><a class="preston" href="#">Preston</a></li>
+        <li><a class="preston" href="../lesson6/preston-6.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
         <li><a href="#">Storm Center</a></li>
@@ -35,128 +35,115 @@
       </ul>
     </nav>
     <main>
-      <h2>Preston Idaho</h2>
-      <div class="heroimg">
-        <picture class="Wk6Hero">
-          <source media="(max-width: 430px)" srcset="images/heroimgsmall.jpg">
-          <source media="(max-width: 700px)" srcset="images/heroimgmed.jpg">
-          <img src="images/heroimglrg.jpg" alt="Green scenery">
-      </picture>
-        <section class="weathersummary">
-          <h3>Weather Summary</h3>
-          <p>Currently: <span id="description">A Chance of Sun</span></p>
-          <p>Temperature: <span id="temp">49</span>°F</p>
-          <p>Humidity: <span id="humidity">23%</span></p>
-          <p>Windchill: <span id="windchill"></span>°F</p>
-          <p>Precipitation: <span id="precipitation">No Chance</span></p>
-          <p>Wind Speed: <span id="speed">12</span>mph</p>
-        </section>
-      </div>
-      <section class="content forecast">
-        <h3>5 Day Forecast</h3>
-        <div class="forecastcontainer">
-          <div class="fiveday">
-            <div class="monday">Monday</div>
+      <section class="gallery content">
+        <h2 id="title">Weather Gallery</h2>
+        <div class="weatherpics">
+          <picture>
             <img
-              class="forecastimgs"
-              alt="sunny in forecast"
-              src="images/sunny.png"
+              src="ihttp://via.placeholder.com/300x400"
+              data-src="images/fall300x400.jpg"
+              alt="Fall is here"
             />
-            <div class="fivedaytemp">95°F</div>
-          </div>
-          <div class="fiveday">
-            <div class="tuesday">Tuesday</div>
-            <img
-              class="forecastimgs"
-              alt="cloudy in forecast"
-              src="images/partlycloudy.png"
-            />
-            <div class="fivedaytemp">95°F</div>
-          </div>
-          <div class="fiveday">
-            <div class="wednesday">Wednesday</div>
-            <img
-              class="forecastimgs"
-              alt="showers in forecast"
-              src="images/showers.png"
-            />
-            <div class="fivedaytemp">63°F</div>
-          </div>
-          <div class="fiveday">
-            <div class="thursday">Thursday</div>
-            <img
-              class="forecastimgs"
-              alt="stormy in forecast"
-              src="images/storm.png"
-            />
-            <div class="fivedaytemp">45°F</div>
-          </div>
-          <div class="fiveday">
-            <div class="friday">Friday</div>
-            <img
-              class="forecastimgs"
-              alt="snow in forecast"
-              src="images/snow.png"
-            />
-            <div class="fivedaytemp">12°F</div>
-          </div>
+          </picture>
+          <p>
+            Fall is here
+          </p>
         </div>
-      </section>
-      <section class="content">
-        <h3>Lorem Ipsum Article</h3>
-        <img class="articleimg" alt="frozen river" src="images/frozen.jpg" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet
-          porttitor eget dolor morbi. Mattis ullamcorper velit sed ullamcorper
-          morbi. Euismod quis viverra nibh cras pulvinar mattis nunc. Purus in
-          mollis nunc sed id semper risus. Fames ac turpis egestas sed tempus.
-          At imperdiet dui accumsan sit amet. Aliquam ut porttitor leo a diam
-          sollicitudin tempor. Amet consectetur adipiscing elit duis tristique
-          sollicitudin nibh. Praesent semper feugiat nibh sed pulvinar. Nisl
-          purus in mollis nunc sed. Cursus euismod quis viverra nibh cras
-          pulvinar mattis.
-        </p>
-
-        <p>
-          Mauris ultrices eros in cursus turpis massa tincidunt. Massa tincidunt
-          nunc pulvinar sapien et ligula ullamcorper malesuada. Mollis aliquam
-          ut porttitor leo a diam sollicitudin tempor. Viverra ipsum nunc
-          aliquet bibendum enim facilisis gravida neque. Nec sagittis aliquam
-          malesuada bibendum arcu vitae elementum curabitur. Ac tortor dignissim
-          convallis aenean et tortor at risus. Sed viverra tellus in hac
-          habitasse. Congue mauris rhoncus aenean vel. Justo eget magna
-          fermentum iaculis eu non diam phasellus vestibulum. Maecenas pharetra
-          convallis posuere morbi leo. Donec ac odio tempor orci dapibus
-          ultrices. Dictum fusce ut placerat orci nulla pellentesque dignissim
-          enim sit. Nullam non nisi est sit.
-        </p>
-
-        <p>
-          Nunc scelerisque viverra mauris in aliquam. Pellentesque massa
-          placerat duis ultricies lacus sed. Penatibus et magnis dis parturient
-          montes. Eu feugiat pretium nibh ipsum consequat. Amet risus nullam
-          eget felis eget nunc lobortis mattis aliquam. Scelerisque purus semper
-          eget duis at. Ornare massa eget egestas purus viverra accumsan in
-          nisl. Vulputate sapien nec sagittis aliquam. Et tortor at risus
-          viverra adipiscing at in. Hac habitasse platea dictumst quisque
-          sagittis purus sit amet volutpat.
-        </p>
-      </section>
-
-      <section class="content contact">
-        <h3>Contact Information</h3>
-        <div class="contact-container">
-          <div class="map">
-            <img class="map-image" alt="map of the area" src="images/map.png" />
-          </div>
-          <div class="address">
-            <h3 class="co-contact">A Chance of Sun</h3>
-            <div>123 Sesame St</div>
-            <div>Preston, ID 83263</div>
-            <div>&phone; 208-555-1212</div>
-            <div>&#9993; email@achanceofsun.com</div>
-          </div>
+        <div class="weatherpics">
+          <picture>
+            <img
+              src="http://via.placeholder.com/300x400"
+              data-src="images/foggy300x400.jpg"
+              alt="Fog in the trees"
+            />
+          </picture>
+          <p>
+            Fog is in the trees
+          </p>
+        </div>
+        <div class="weatherpics">
+          <picture>
+            <img
+              src="http://via.placeholder.com/300x400"
+              data-src="images/heavenly300x400.jpg"
+              alt="Heavenly skies"
+            />
+          </picture>
+          <p>
+            Heavenly skies
+          </p>
+        </div>
+        <div class="weatherpics">
+          <picture>
+            <img
+              src="ihttp://via.placeholder.com/300x400"
+              data-src="images/mountains300x400.jpg"
+              alt="Snowy roads by the river"
+            />
+          </picture>
+          <p>
+            Snowy roads by the river
+          </p>
+        </div>
+        <div class="weatherpics">
+          <picture>
+            <img
+              src="http://via.placeholder.com/300x400"
+              data-src="images/northernlights300x400.jpg"
+              alt="Northern lights"
+            />
+          </picture>
+          <p>
+            Northern lights over the mountains
+          </p>
+        </div>
+        <div class="weatherpics">
+          <picture>
+            <img
+              src="http://via.placeholder.com/300x400"
+              data-src="images/winter300x400.jpg"
+              alt="Snow trees"
+            />
+          </picture>
+          <p>
+            Snow trees
+          </p>
+        </div>
+        <div class="weatherpics">
+          <picture>
+            <img
+              src="http://via.placeholder.com/300x400"
+              data-src="images/road300x400.jpg"
+              alt="Long road home"
+            />
+          </picture>
+          <p>
+            Long road home
+          </p>
+        </div>
+        <div class="weatherpics">
+          <picture>
+            <img
+              src="http://via.placeholder.com/300x400"
+              data-src="images/pinkclouds300x400.jpg"
+              alt="Pink clouds"
+            />
+          </picture>
+          <p>
+            Pink clouds
+          </p>
+        </div>
+        <div class="weatherpics">
+          <picture>
+            <img
+              src="http://via.placeholder.com/300x400"
+              data-src="images/lightning300x400.jpg"
+              alt="lightning on the dock"
+            />
+          </picture>
+          <p>
+            Lightning on the dock
+          </p>
         </div>
       </section>
     </main>
@@ -173,7 +160,7 @@
       <script src="js/font.js"></script>
       <script src="js/main.js"></script>
       <script src="js/windchill.js"></script>
-      
+      <script src="js/script.js"></script>
     </footer>
   </body>
 </html>
