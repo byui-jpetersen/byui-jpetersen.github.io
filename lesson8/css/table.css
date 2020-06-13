@@ -18,6 +18,10 @@ thead {
     font-size: 1.7em;
 }
 
+th {
+    padding: 10px;
+}
+
 td {
     border: 1px solid lightgray;
     border-collapse: collapse;
