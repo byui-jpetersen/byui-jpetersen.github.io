@@ -42,44 +42,39 @@
             <form method="GET" action="thanks.html" autocomplete="on">
                 <div class="formfields">
                     <div class="datainput">
-                        <label>Full Name:
+                        <label for="name">Full Name:</label>
                         <input type="text" id="name" name="name" required pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}">
-                    </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label>Email:
+                        <label for="email">Email:</label>
                         <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
-                    </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label> Phone:
-                        <input type="tel" name="phone" placeholder="555555555" required
+                        <label for="phone"> Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="555555555" required
                             pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10">
-                        </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label> Zip Code:
-                        <input type="number" name="zip" required>
-                    </label>
+                        <label for="zip"> Zip Code:</label>
+                        <input type="number" name="zip" id="zip" required>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label> Date:
-                        <input type="date" name="datestorm">
-                    </label>
+                        <label for="datestorm"> Date:</label>
+                        <input type="date" name="datestorm" id="datestorm">
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label> Storm Type:
-                        <input type="text" name="stormtype" list="stormtype">
+                        <label for="stormtype"> Storm Type:</label>
+                        <input type="text" name="stormtype" id="stormtype" list="stormtype">
                         <datalist id="stormtype">
                             <option value="Flash Flood"></option>
                             <option value="Hail"></option>
@@ -87,33 +82,31 @@
                             <option value="Thunderstorm"></option>
                             <option value="Tornado"></option>
                         </datalist>
-                    </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label>Storm Severity:
-                        <input type="range" name="stormrating" id="rating" value="1" min="1" max="10" step="1"
+                        <label for="stormrating">Storm Severity:</label>
+                        <input type="range" name="stormrating" id="stormrating" value="1" min="1" max="10" step="1"
                             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        </label>
                         <div id="ratingvalue">1</div>
                     </div>
                 </div>
                 <div class="formfields">
                 <div class="datainput">
-                    <label> Storm Region:
+                    <label for="region"> Storm Region:</label>
                     <select name="stormregion" id="region">
                         <option value="">Select Region...</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
                         <option value="Fish Haven">Fish Haven</option>
                     </select>
-                </label>
                 </div>
             </div>
             <div class="formfields">
                 <div class="datainput">
-                    <label>User In-Danger<br> Level:
+                    <fieldset>
+                    <label for="danger">User In-Danger<br> Level:</label>
                     <div class="radio">
                         <div class="radioinput">
                             <input type="radio" name="danger" id="Yes" value="Yes">
@@ -126,17 +119,16 @@
                         <div class="radioinput">
                             <input type="radio" name="danger" id="Maybe" value="Maybe">
                             <label>Maybe</label>
-                        </label>
                         </div>
                     </div>
+                </fieldset>
                 </div>
             </div>
             <div class="formfields">
                 <div class="datainput">
-                    <label>Comments:
+                    <label for="comments">Comments:</label>
                     <textarea rows="6" cols="30" name="comments"
                         placeholder="Enter weather details here..."></textarea>
-                    </label>
                 </div>
                 <div class="datainput">
                     <button type="submit" value="Submit">
