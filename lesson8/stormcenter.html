@@ -86,21 +86,22 @@
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="stormrating">Storm Severity:</label>
+                        <label>Storm Severity:
                         <input type="range" name="stormrating" id="stormrating" value="1" min="1" max="10" step="1"
                             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        </label>
                         <div id="ratingvalue">1</div>
                     </div>
                 </div>
                 <div class="formfields">
                 <div class="datainput">
-                    <label for="region"> Storm Region:</label>
+                    <label> Storm Region:
                     <select name="stormregion" id="region">
                         <option value="">Select Region...</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
                         <option value="Fish Haven">Fish Haven</option>
-                    </select>
+                    </select></label>
                 </div>
             </div>
             <div class="formfields">
@@ -109,17 +110,17 @@
                     <legend>User In-Danger Level:</legend>
                     <div class="radio">
                         <div class="radioinput">
-                            <label for="yes">Yes
+                            <label>Yes
                             <input type="radio" name="danger" id="yes" value="Yes">
                             </label>
                         </div>
                         <div class="radioinput">
-                            <label for="no">No
+                            <label>No
                             <input type="radio" name="danger" id="no" value="No" checked>
                             </label>
                         </div>
                         <div class="radioinput">
-                            <label for="maybe">Maybe
+                            <label>Maybe
                             <input type="radio" name="danger" id="maybe" value="Maybe">
                             </label>
                         </div>
