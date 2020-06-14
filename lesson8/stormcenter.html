@@ -42,39 +42,45 @@
             <form method="GET" action="thanks.html" autocomplete="on">
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="name">Full Name:</label>
+                        <label>Full Name:
                         <input type="text" id="name" name="name" required pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}">
+                    </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="email">Email:</label>
+                        <label>Email:
                         <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="phone"> Phone:</label>
+                        <label> Phone:
                         <input type="tel" name="phone" id="phone" placeholder="555555555" required
                             pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10">
+                        </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="zip"> Zip Code:</label>
+                        <label> Zip Code:
                         <input type="number" name="zip" id="zip" required>
+                    </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="datestorm"> Date:</label>
+                        <label> Date:
                         <input type="date" name="datestorm" id="datestorm">
+                    </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="stormtype"> Storm Type:</label>
+                        <label> Storm Type:
                         <input type="text" name="stormtype" id="stormtype" list="stormtype">
+                    </label>
                         <datalist id="stormtype">
                             <option value="Flash Flood"></option>
                             <option value="Hail"></option>
