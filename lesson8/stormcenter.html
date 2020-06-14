@@ -42,38 +42,43 @@
             <form method="GET" action="thanks.html" autocomplete="on">
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="name">Full Name:</label>
+                        <label>Full Name:
                         <input type="text" id="name" name="name" required pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}">
+                    </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="email">Email:</label>
+                        <label>Email:</label>
                         <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="phone"> Phone:</label>
+                        <label> Phone:
                         <input type="tel" name="phone" placeholder="555555555" required
                             pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10">
+                        </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="zip"> Zip Code:</label>
+                        <label> Zip Code:
                         <input type="number" name="zip" required>
+                    </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="datestorm"> Date:</label>
+                        <label> Date:
                         <input type="date" name="datestorm">
+                    </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="stormtype"> Storm Type:</label>
+                        <label> Storm Type:
                         <input type="text" name="stormtype" list="stormtype">
                         <datalist id="stormtype">
                             <option value="Flash Flood"></option>
@@ -82,41 +87,47 @@
                             <option value="Thunderstorm"></option>
                             <option value="Tornado"></option>
                         </datalist>
+                    </label>
                     </div>
                 </div>
                 <div class="formfields">
                     <div class="datainput">
-                        <label for="stormrating">Storm Severity:</label>
+                        <label>Storm Severity:
                         <input type="range" name="stormrating" id="rating" value="1" min="1" max="10" step="1"
                             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        </label>
                         <div id="ratingvalue">1</div>
                     </div>
                 </div>
                 <div class="formfields">
                 <div class="datainput">
-                    <label for="stormregion"> Storm Region:</label>
+                    <label> Storm Region:
                     <select name="stormregion" id="region">
                         <option value="">Select Region...</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
                         <option value="Fish Haven">Fish Haven</option>
                     </select>
+                </label>
                 </div>
             </div>
             <div class="formfields">
                 <div class="datainput">
-                    <label for="danger">User In-Danger<br> Level:</label>
+                    <label>User In-Danger<br> Level:
                     <div class="radio">
                         <div class="radioinput">
                             <input type="radio" name="danger" id="Yes" value="Yes">
+                        </label>
                             <label>Yes</label>
                         </div>
                         <div class="radioinput">
                             <input type="radio" name="danger" id="No" value="No" checked>
+                        </label>
                             <label>No</label>
                         </div>
                         <div class="radioinput">
                             <input type="radio" name="danger" id="Maybe" value="Maybe">
+                        </label>
                             <label>Maybe</label>
                         </div>
                     </div>
@@ -124,9 +135,10 @@
             </div>
             <div class="formfields">
                 <div class="datainput">
-                    <label for="comments">Comments:</label>
+                    <label for="comments">Comments:
                     <textarea rows="6" cols="30" name="comments"
                         placeholder="Enter weather details here..."></textarea>
+                    </label>
                 </div>
                 <div class="datainput">
                     <button type="submit" value="Submit">
