@@ -26,7 +26,7 @@ var months = [
 document.getElementById("currentdate").innerHTML =
   day[d.getDay()] +
   ", " +
-  d.getDay() +
+  d.getDate() +
   " " +
   months[d.getMonth()] +
   " " +
