@@ -163,6 +163,7 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 0 0 7rem;
 }
 
 input:focus:invalid {
@@ -225,7 +226,7 @@ div.datainput button {
 }
 
 .datainput label {
-  flex-basis: 8rem;
+  flex-basis: 1rem;
   padding: 0.2em;
 }
 
@@ -246,6 +247,6 @@ div.datainput button {
   display: block;
 }
 
-.fieldset {
+fieldset {
   border: none;
 }
