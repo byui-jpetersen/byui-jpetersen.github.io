@@ -43,7 +43,7 @@
                 <div class="formfields">
                     <div class="datainput">
                         <label>Full Name:</label>
-                        <input type="text" id="name" name="name" required pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}">
+                        <input type="text" id="name" name="name" required pattern="([a-z][A-Z]).{5,}">
                     </div>
                 </div>
                 <div class="formfields">
@@ -56,7 +56,7 @@
                     <div class="datainput">
                         <label> Phone:</label>
                         <input type="tel" name="phone" placeholder="999-999-9999" required
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="14">
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10">
                     </div>
                 </div>
                 <div class="formfields">
@@ -87,7 +87,7 @@
                 <div class="formfields">
                     <div class="datainput">
                         <label>Storm Severity:</label>
-                        <input type="range" id="rating" value="5" min="1" max="10" step="1"
+                        <input type="range" id="rating" value="1" min="1" max="10" step="1"
                             oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                         <div id="ratingvalue">5</div>
                     </div>
@@ -95,7 +95,7 @@
                 <div class="formfields">
                 <div class="datainput">
                     <label> Storm Region:</label>
-                    <select name="stormregion" id="region-select">
+                    <select name="stormregion" id="region">
                         <option value="">Select Region...</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
