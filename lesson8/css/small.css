@@ -188,11 +188,6 @@ form {
   flex-direction: column;
 }
 
-.datainput {
-  display: flex;
-  flex-direction: column;
-}
-
 .datainput span {
   display: none;
 }
@@ -249,4 +244,8 @@ div.datainput button {
 
 .datainput span {
   display: block;
+}
+
+.fieldset {
+  border: none;
 }
