@@ -21,7 +21,7 @@ fetch(requestURL)
       bplace.textContent = "Place of Birth:" + " " + prophets[i].birthplace;
       card.appendChild(bplace);
       images.setAttribute("src", prophets[i].imageurl);
-      image.setAttribute("alt","Prophet of the Church");
+      images.setAttribute("alt","Prophet of the Church");
       card.appendChild(images);
 
       document.querySelector("div.cards").appendChild(card);
