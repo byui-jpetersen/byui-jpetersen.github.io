@@ -16,7 +16,7 @@ fetch(requestURL)
 
     southern.forEach((town) => {
       let eachTown = document.createElement("article");
-      let townData = document.createElement("div");
+      let townData = document.createElement("section");
       let h2 = document.createElement("h2");
       let h3 = document.createElement("h3");
       let para1 = document.createElement("p");
@@ -45,6 +45,6 @@ fetch(requestURL)
       image.setAttribute("alt", "${town.name}: ${town.motto}");
       eachTown.appendChild(image);
 
-      document.querySelector("div.town-info").appendChild(eachTown);
+      document.querySelector("section.town-info").appendChild(eachTown);
     });
   });
