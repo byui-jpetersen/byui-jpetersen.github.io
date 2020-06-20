@@ -33,10 +33,10 @@ fetch(requestURL)
         founded.innerHTML = `Year Founded: ${town.founded}`;
         townData.appendChild(founded);
 
-        population.innerHTML = `Population: ${town.currentPopulation}`;
+        population.innerHTML = `Population: ${town.population}`;
         townData.appendChild(population);
 
-        rainFall.innerHTML = `Annual Rain Fall: ${town.averageRainfall}`;
+        rainFall.innerHTML = `Annual Rain Fall: ${town.rainFall}`;
         townData.appendChild(rainFall);
 
         image.setAttribute('src', `images/${town.photo}`);
