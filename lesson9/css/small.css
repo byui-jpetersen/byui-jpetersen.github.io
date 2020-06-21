@@ -71,7 +71,7 @@ section {
 
 .content {
   background-color: #83c5be;
-  box-shadow: inset rgba(0,0,0,.5) 0px 0px 5px 0px;
+  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
 }
 
 .datainput {
@@ -142,13 +142,47 @@ nav a:link {
 
 /* visited link */
 nav a:visited {
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 section #title {
   grid-column: span 1;
 }
 
+.satire {
+  background-color: white;
+  padding: 1rem;
+}
+
+section.towndetails {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  max-width: 100%;
+  padding: 1em;
+  text-align: center;
+}
+
+section.townSections h3 {
+  margin: 0;
+}
+
+.townSections {
+  padding: 0;
+}
+
+.townArticles {
+  background-color: white;
+  padding: .75em;
+}
+
+.townArticles h3 {
+  font-size: small;
+}
+
+article img {
+  max-width: 100%;
+}
 
 section h2 {
   text-align: center;
@@ -160,11 +194,11 @@ footer {
 }
 
 input:focus:invalid {
-  border-left: .5rem solid red;
+  border-left: 0.5rem solid red;
 }
 
 input:focus:valid {
-  border-left: .5rem solid green;
+  border-left: 0.5rem solid green;
 }
 
 span::after {
