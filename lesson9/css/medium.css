@@ -35,6 +35,10 @@ article {
 	margin: 0 0 1rem 0;
 }
 
+article.satire {
+  display: block;
+}
+
 .townArticles {
 	min-width: -webkit-fill-available;
 	justify-content: space-evenly;
