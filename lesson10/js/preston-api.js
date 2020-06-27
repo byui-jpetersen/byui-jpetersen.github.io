@@ -13,7 +13,7 @@ fetch(apiURL)
     .then((jsObject) => {
         //console.log(jsObject);
         document.getElementById('currently').textContent = jsObject.current.weather[0].description;
-        document.getElementById('hightemp').textContent = jsObject.current.weather.daily.temp.max.toFixed();
+        document.getElementById('hightemp').textContent = jsObject.daily[0].temp.max.toFixed();
         document.getElementById('humidity').textContent = jsObject.current.humidity;
         document.getElementById('speed').textContent = jsObject.current.wind_speed.toFixed();
         const newDay = jsObject['daily'];
