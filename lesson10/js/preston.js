@@ -1,5 +1,13 @@
 const apiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=42.1&lon=-111.88&units=imperial&exclude=minutely,hourly&appid=cd296ba4edb3930334e2b3b8876bb180';
-
+var day = new Date();
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -8,50 +16,34 @@ fetch(apiURL)
         document.getElementById('current-temp').textContent = jsObject.current.temp.toFixed();
         document.getElementById('humidity').textContent = jsObject.current.humidity;
         document.getElementById('speed').textContent = jsObject.current.wind_speed.toFixed();
-
         const newDay = jsObject['daily'];
         const forecast = newDay.slice(1, 6);
-
         forecast.forEach(eachDay => {
             let data = document.createElement('div');
-            let para1 = document.createElement('p');
+            data.setAttribute('class', 'fiveday');
+            let day = document.createElement('div');
+            let temp = document.createElement('div');
             let image = document.createElement('img');
-
+            let newDay= new Date(eachDay.dt * 1000);
+            day.setAttribute('class', weekday[newDay.getDay() % 7]);
+            day.innerHTML = weekday[newDay.getDay() % 7];
             image.setAttribute('src', `https://openweathermap.org/img/w/${eachDay.weather[0].icon}.png`);
             image.setAttribute('alt', `${eachDay.weather[0].description}`);
-
-            para1.innerHTML = `${eachDay.temp.day.toFixed(0)}&#8457;`;
-            data.appendChild(para1);
+            image.setAttribute('class', 'forecastimgs');
+            temp.setAttribute('class', 'fivedaytemp');
+            temp.innerHTML = `${eachDay.temp.day.toFixed(0)}&#8457;`;
+            data.appendChild(day);
             data.appendChild(image);
-
-            document.querySelector('.newData').appendChild(data);
+            data.appendChild(temp);
+            document.querySelector('.forecastcontainer').appendChild(data);
         })
     });
-    
-
-var day = new Date();
-var weekday = new Array(7);
-weekday[0] = "Sun";
-weekday[1] = "Mon";
-weekday[2] = "Tues";
-weekday[3] = "Wed";
-weekday[4] = "Thurs";
-weekday[5] = "Fri";
-weekday[6] = "Sat";
-
-document.getElementById('tomorrow').innerHTML = weekday[(day.getDay() + 1) % 7];
-document.getElementById('day2').innerHTML = weekday[(day.getDay() + 2) % 7];
-document.getElementById('day3').innerHTML = weekday[(day.getDay() + 3) % 7];
-document.getElementById('day4').innerHTML = weekday[(day.getDay() + 4) % 7];
-document.getElementById('day5').innerHTML = weekday[(day.getDay() + 5) % 7];
-
 const banner = document.getElementById("pancakes");
 if (day.getDay() == 5) {
   banner.style.display = "block";
 } else {
   banner.style.display = "none";
 }
-
 function adjustRating(rating) {
   document.getElementById("ratingvalue").innerHTML = rating;
 }

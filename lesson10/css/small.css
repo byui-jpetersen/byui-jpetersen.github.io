@@ -64,9 +64,17 @@ nav {
 section {
   font-family: "Montserrat", sans-serif;
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+.forecastcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.fivedaytemp {
+  grid-row: 2;
+  grid-column: 1/5;
 }
 
 .content {
@@ -115,6 +123,76 @@ h3 {
   padding-top: 1rem;
 }
 
+.heroimg {
+  position: relative;
+  padding: 0;
+}
+.heroimg img{
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+.heroimage {
+  max-width: 100%;
+}
+.weathersummary {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: 0px 5px 8px #888888;
+  opacity: 75%;
+  line-height: 1rem;
+  margin: 0;
+  font-size: .85rem;
+}
+.forecastcontainer {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row: 1;
+  gap: 0px 10px
+}
+.fiveday {
+  opacity: 90%;
+  background-color: #fff;
+  padding: 1rem;
+  font-weight: bolder;
+}
+.forecastimgs {
+  max-width: 50px;
+}
+.content {
+  background-color: #83C5BE;
+  box-shadow: inset rgba(0,0,0,.5) 0px 0px 5px 0px;
+}
+section.content.forecast {
+  display: none;
+}
+.articleimg {
+  float: right;
+  max-width: 300px;
+  padding: 1.25rem;
+}
+.content p {
+  text-align: left;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div.address {
+  text-align: center;
+}
+h3.co-contact {
+  font-weight: bolder;
+}
+.map-image {
+  max-width: 100%;
+}
+
 /* unvisited link */
 footer a:link {
   color: white;
@@ -152,23 +230,6 @@ section #title {
 .satire {
   background-color: white;
   padding: 1rem;
-}
-
-section.forecastcontainer {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  padding: 1em;
-  text-align: center;
-}
-
-.fiveday {
-  display: flex;
-  flex-direction: row;
-  grid-gap: 1em;
-  max-width: 100%;
-  padding: 1em;
-  text-align: center;
 }
 
 section.townSections h3 {
