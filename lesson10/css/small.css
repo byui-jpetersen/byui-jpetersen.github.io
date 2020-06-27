@@ -65,6 +65,7 @@ section {
   font-family: "Montserrat", sans-serif;
   padding: 1rem;
   align-items: center;
+  margin: .5rem 0 0 0;
 }
 
 .forecastcontainer {
@@ -121,6 +122,14 @@ h3 {
   font-size: 2rem;
   font-weight: bolder;
   padding-top: 1rem;
+}
+
+main {
+  max-width: 1080px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .heroimg {

@@ -20,7 +20,7 @@
     text-align: center;
   }
   
-* {padding: .35rem;}
+
 h2 {text-align:center;}
 
 section.towndetails {
@@ -48,7 +48,11 @@ article:nth-child(odd) {
 	flex-direction: row-reverse;
 }
 
-img {max-width: 400px; height: auto;}
+.townimages {
+  max-width: 400px;
+   height: auto;
+  }
+
 .townArticles {
 	background-color:white;
 }

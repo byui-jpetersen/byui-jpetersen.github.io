@@ -43,6 +43,7 @@ fetch(requestURL)
 
       image.setAttribute("src", "images/" + town.photo);
       image.setAttribute("alt", town.name + ": " + town.motto);
+      image.setAttribute("class", "townimages")
       eachTown.appendChild(image);
 
       document.querySelector("section.towndetails").appendChild(eachTown);

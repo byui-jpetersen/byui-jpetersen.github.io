@@ -13,6 +13,7 @@ fetch(requestURL)
       let bdate = document.createElement("p");
       let bplace = document.createElement("p");
       let images = document.createElement("img");
+      images.setAttribute('class', 'prophetimages');
 
       h2.textContent = prophets[i].name + " " + prophets[i].lastname;
       card.appendChild(h2);
