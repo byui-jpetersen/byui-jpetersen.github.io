@@ -1,4 +1,4 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=42.1&lon=-111.88&units=imperial&exclude=minutely,hourly&appid=cd296ba4edb3930334e2b3b8876bb180';
+const apiURL = 'https://api.openweathermap.org/data/2.5/onecall?lat=42.09&lon=-111.88&units=imperial&exclude=minutely,hourly&appid=cd296ba4edb3930334e2b3b8876bb180';
 var day = new Date();
 var weekday = new Array(7);
 weekday[0] = "Sunday";
@@ -12,8 +12,8 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         //console.log(jsObject);
-        document.getElementById('current').textContent = jsObject.current.weather[0].description;
-        document.getElementById('current-temp').textContent = jsObject.current.temp.toFixed();
+        document.getElementById('currently').textContent = jsObject.current.weather[0].description;
+        document.getElementById('hightemp').textContent = jsObject.current.weather.daily.temp.max.toFixed();
         document.getElementById('humidity').textContent = jsObject.current.humidity;
         document.getElementById('speed').textContent = jsObject.current.wind_speed.toFixed();
         const newDay = jsObject['daily'];
