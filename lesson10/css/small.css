@@ -154,9 +154,17 @@ section #title {
   padding: 1rem;
 }
 
-section.towndetails {
-  display: grid;
-  grid-template-columns: 1fr;
+section.forecastcontainer {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  padding: 1em;
+  text-align: center;
+}
+
+.fiveday {
+  display: flex;
+  flex-direction: row;
   grid-gap: 1em;
   max-width: 100%;
   padding: 1em;
