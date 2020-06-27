@@ -17,10 +17,10 @@ fetch(apiURL)
             let para1 = document.createElement('p');
             let image = document.createElement('img');
 
-            image.setAttribute('src', 'https://openweathermap.org/img/w/${eachDay.weather[0].icon}.png');
-            image.setAttribute('alt', '${eachDay.weather[0].description}');
+            image.setAttribute('src', `https://openweathermap.org/img/w/${eachDay.weather[0].icon}.png`);
+            image.setAttribute('alt', `${eachDay.weather[0].description}`);
 
-            para1.innerHTML = '${eachDay.temp.day.toFixed(0)}&#8457;}';
+            para1.innerHTML = `${eachDay.temp.day.toFixed(0)}&#8457;`;
             data.appendChild(para1);
             data.appendChild(image);
 
