@@ -252,6 +252,7 @@ section.townSections h3 {
 .townArticles {
   background-color: white;
   padding: .75em;
+  margin-bottom: 1rem;
 }
 
 .townArticles h3 {
