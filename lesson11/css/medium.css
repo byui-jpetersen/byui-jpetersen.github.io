@@ -1,0 +1,100 @@
+@media only screen and (min-width: 680px) {
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  main {
+    margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+
+h2 {text-align:center;}
+
+section.towndetails {
+  margin: .5rem auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+article {
+  display: flex;
+	flex-direction: row;
+	margin: 0 0 1rem 0;
+}
+
+article.satire {
+  display: block;
+}
+
+.townArticles {
+	min-width: -webkit-fill-available;
+	justify-content: space-evenly;
+}
+
+article:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+.townimages {
+  max-width: 400px;
+   height: auto;
+  }
+
+.townArticles {
+	background-color:white;
+}
+.weathersummary {
+	top: 10%;
+	left: 3%;
+  }
+  div.weathersummary {
+	  margin: 7px;
+  }
+  section.content.forecast {
+	display: block;
+  }
+  .contact-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+  }
+  h3.co-contact {
+	text-align: left;
+	margin: 0;
+  }
+  div.address {
+	text-align: left;
+	line-height: 2rem;
+  }
+
+  .weatherpics:hover {
+    box-shadow: inset 0 -3em 3em #888888,
+      0 0 0 2px rgb(165, 161, 161),
+      0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    margin: .3em;
+  }
+  
+  section.gallery {
+    margin: .7em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  
+  section #title {
+    grid-column: span 2;
+  }
+}

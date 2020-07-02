@@ -1,0 +1,66 @@
+@media only screen and (min-width: 1100px) {
+
+	nav ul {
+		display: flex;
+	}
+
+	nav ul li {
+		flex: 1 1 100%;
+	  }
+
+	h1 {
+		font-size: 2rem;
+	  }
+	  header {
+		  display: flex;
+	  }
+
+	  .towndetails {
+		display: flex;
+		flex-direction: row;
+		max-width: 100%;
+		padding: 1em;
+		text-align: center;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	  }
+
+	  article:nth-child(odd) {
+		flex-direction: column;
+	}
+
+	  section.townSections h3 {
+		margin: 0;
+	  }
+	  
+	  .townSections {
+		padding: 0;
+	  }
+	  
+	  .townArticles {
+		background-color: white;
+		padding: .75em;
+		flex-direction: column;
+		max-width: 310px;
+		margin: 0 5px 0 5px;
+		min-width: auto;
+		min-height: 500px;
+	  }
+
+	  .townArticles h3 {
+		font-size: small;
+	  }
+	  
+	  .townimages {
+		max-width: 200px;
+	  }
+
+	  section #title {
+		grid-column: span 3;
+	}
+	section.gallery {
+		margin: .7em 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+}
+}

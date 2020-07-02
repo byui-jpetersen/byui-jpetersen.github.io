@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Satiracle Weather Site" />
+    <title>A Chance of Sun</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="pancakes">
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion.
+    </div>
+    <header>
+      <img src="images/logo.png" alt="weather logo" class="logo" />
+      <section>
+        <h1>A Chance of Sun</h1>
+        <div class="moto">We guarantee a chance of sun... somewhere!</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">&#9776; Menu</a></li>
+        <li><a href="/lesson11/">Home</a></li>
+        <li><a class="preston" href="preston.html">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+<main>
+    <h2>Report the Weather</h2>
+    <section class="content">
+        <h3>What is the weather like in your area?</h3>
+            <form method="GET" action="thanks.html" autocomplete="on">
+                <div class="formfields">
+                    <div class="datainput">
+                        <label>Full Name:
+                        <input type="text" id="name" name="name" required pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}">
+                    </label>
+                    </div>
+                </div>
+                <div class="formfields">
+                    <div class="datainput">
+                        <label>Email:
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                    </label>
+                    </div>
+                </div>
+                <div class="formfields">
+                    <div class="datainput">
+                        <label> Phone:
+                        <input type="tel" name="phone" id="phone" placeholder="555555555" required
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" maxlength="10">
+                        </label>
+                    </div>
+                </div>
+                <div class="formfields">
+                    <div class="datainput">
+                        <label> Zip Code:
+                        <input type="number" name="zip" id="zip" required>
+                    </label>
+                    </div>
+                </div>
+                <div class="formfields">
+                    <div class="datainput">
+                        <label> Date:
+                        <input type="date" name="datestorm" id="datestorm">
+                    </label>
+                    </div>
+                </div>
+                <div class="formfields">
+                    <div class="datainput">
+                        <label> Storm Type:
+                        <input type="text" name="stormtype" list="stormtype">
+                    </label>
+                        <datalist id="stormtype">
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </div>
+                </div>
+                <div class="formfields">
+                    <div class="datainput">
+                        <label>Storm Severity:
+                        <input type="range" name="stormrating" id="stormrating" value="1" min="1" max="10" step="1"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">1</span>
+                    </label>
+                    </div>
+                </div>
+                <div class="formfields">
+                <div class="datainput">
+                    <label> Storm Region:
+                    <select name="stormregion" id="region">
+                        <option value="">Select Region...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select></label>
+                </div>
+            </div>
+            <div class="formfields">
+                <div class="datainput">
+                    <fieldset>
+                    <legend>User In-Danger Level:</legend>
+                    <div class="radio">
+                        <div class="radioinput">
+                            <label>Yes
+                            <input type="radio" name="danger" id="yes" value="Yes">
+                            </label>
+                        </div>
+                        <div class="radioinput">
+                            <label>No
+                            <input type="radio" name="danger" id="no" value="No" checked>
+                            </label>
+                        </div>
+                        <div class="radioinput">
+                            <label>Maybe
+                            <input type="radio" name="danger" id="maybe" value="Maybe">
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                </div>
+            </div>
+            <div class="formfields">
+                <div class="datainput">
+                    <label>Comments:
+                    <textarea rows="6" cols="30" name="comments" placeholder="Enter weather details here..."></textarea>
+                </label>
+                </div>
+                <div class="datainput">
+                    <button type="submit" value="Submit">
+                        Submit Weather Report
+                    </button>
+                </div>
+                </div>
+            </form>
+        </section> 
+        </main>   
+        <footer>
+            <p>
+              &copy; <span id="currentyear"></span> | Jeremy R. Petersen | California
+              |
+              <a href="https://www.byui.edu/online" target="_blank" rel="noreferrer">BYU-I Online Learning</a>
+            </p>
+            <p>Current Date: <span id="currentdate"></span></p>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script src="js/font.js"></script>
+            <script src="js/main.js"></script>
+            <script src="js/script.js"></script>
+          </footer>
+        </body>
+      </html>
