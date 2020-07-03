@@ -359,6 +359,11 @@ section.gallery {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   grid-gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  text-align: left;
+  background-color: #83c5be;
+  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
 }
 
 .weatherpics {
