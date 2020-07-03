@@ -22,7 +22,7 @@ fetch(requestURL)
             eachTown.appendChild(p1)
 
             h3.innerHTML = `Upcoming Events`;
-            eachTown.appendChild(h3);
+            p1.appendChild(h3);
 
             p2.innerHTML = `${town.events[2]}`;
             p1.appendChild(p2);
