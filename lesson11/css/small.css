@@ -460,3 +460,24 @@ div.datainput button {
 fieldset {
   border: none;
 }
+
+.prestonevents {
+  background-color: #83c5be;
+  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+  max-width: 400px;
+  margin: .5rem auto;
+}
+
+.fishhavenevents {
+  background-color: #83c5be;
+  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+  max-width: 400px;
+  margin: .5rem auto;
+}
+
+.sodaspringsevents {
+  background-color: #83c5be;
+  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+  max-width: 400px;
+  margin: .5rem auto;
+}

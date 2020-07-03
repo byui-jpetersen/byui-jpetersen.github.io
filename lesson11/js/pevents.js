@@ -24,13 +24,13 @@ fetch(requestURL)
             h3.innerHTML = `Upcoming Events`;
             p1.appendChild(h3);
 
-            p2.innerHTML = `${town.events[2]}`;
+            p2.innerHTML = `${town.events[0]}`;
             p1.appendChild(p2);
 
-            p3.innerHTML = `${town.events[0]}`;
+            p3.innerHTML = `${town.events[1]}`;
             p1.appendChild(p3);
 
-            p4.innerHTML = `${town.events[1]}`;
+            p4.innerHTML = `${town.events[2]}`;
             p1.appendChild(p4);
 
             document.querySelector('section.prestonevents').appendChild(eachTown);
