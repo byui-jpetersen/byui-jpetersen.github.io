@@ -182,6 +182,10 @@ section.contentarticle {
   box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
 }
 
+.contentarticle p {
+  text-align: left;
+}
+
 section.content.forecast {
   display: none;
 }
