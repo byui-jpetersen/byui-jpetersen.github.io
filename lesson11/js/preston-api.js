@@ -1,6 +1,5 @@
 const apiURL =
   "https://api.openweathermap.org/data/2.5/forecast?lat=42.1&lon=-111.88&units=imperial&appid=cd296ba4edb3930334e2b3b8876bb180";
-var day = new Date();
 var weekday = new Array(7);
 weekday[0] = "Sunday";
 weekday[1] = "Monday";
@@ -66,21 +65,5 @@ fetch(apiURL)
       document.querySelector(".forecastcontainer").appendChild(data);
     });
   });
-const banner = document.getElementById("pancakes");
-if (day.getDay() == 5) {
-  banner.style.display = "block";
-} else {
-  banner.style.display = "none";
-}
-function adjustRating(rating) {
-  document.getElementById("ratingvalue").innerHTML = rating;
-}
 
-document.getElementById("currentdate").innerHTML =
-  weekday[day.getDay()] +
-  ", " +
-  day.getDate() +
-  " " +
-  months[day.getMonth()] +
-  " " +
-  day.getFullYear();
+

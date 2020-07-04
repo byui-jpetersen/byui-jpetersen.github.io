@@ -1,6 +1,5 @@
 const apiURL =
   "https://api.openweathermap.org/data/2.5/forecast?lat=42.66&lon=-111.62&units=imperial&appid=cd296ba4edb3930334e2b3b8876bb180";
-var day = new Date();
 var weekday = new Array(7);
 weekday[0] = "Sunday";
 weekday[1] = "Monday";
