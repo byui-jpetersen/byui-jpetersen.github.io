@@ -49,12 +49,4 @@ fetch(apiURL)
       document.querySelector(".forecastcontainer").appendChild(data);
     });
   });
-const banner = document.getElementById("pancakes");
-if (day.getDay() == 5) {
-  banner.style.display = "block";
-} else {
-  banner.style.display = "none";
-}
-function adjustRating(rating) {
-  document.getElementById("ratingvalue").innerHTML = rating;
-}
+
