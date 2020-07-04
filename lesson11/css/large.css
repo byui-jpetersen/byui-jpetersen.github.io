@@ -69,4 +69,7 @@ section.content {
 	align-items: center;
 	text-align: left;
   }
+  section.towndetails.content {
+    flex-direction: unset;
+}
 }

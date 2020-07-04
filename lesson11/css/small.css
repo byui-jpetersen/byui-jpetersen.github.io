@@ -173,9 +173,9 @@ main {
 .forecastimgs {
   max-width: 50px;
 }
-section.towndetails.content {
+/* section.towndetails.content {
   flex-direction: unset;
-}
+} */
 
 section.contentarticle {
   background-color: #83c5be;
