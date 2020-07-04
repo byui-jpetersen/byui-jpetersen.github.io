@@ -9,21 +9,6 @@ weekday[4] = "Thursday";
 weekday[5] = "Friday";
 weekday[6] = "Saturday";
 
-var months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
