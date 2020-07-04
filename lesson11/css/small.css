@@ -488,6 +488,7 @@ section.events {
 input, select, textarea {
   padding: .5rem;
 }
+
 .map {
   margin: 0 5rem 0 0;
 }
