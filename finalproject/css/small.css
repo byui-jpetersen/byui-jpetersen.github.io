@@ -1,0 +1,483 @@
+body {
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 16px;
+  display: block;
+  margin: auto;
+  text-align: left;
+}
+
+.scoots {
+  float: left;
+  margin-top: 25px;
+  margin-left: 25px;
+  font-family: "Permanent Marker", sans-serif;
+  color: #e7b84b;
+  font-size: 4rem;
+  -webkit-text-stroke: 4px black;
+}
+
+.calltoaction {
+  float: right;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+button {
+  background-color: #e7b84b;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.navigation {
+  display: block;
+}
+
+.navigation a {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.navigation a:link {
+  color: #747274;
+}
+.navigation a:visited {
+  color: #747274;
+}
+.navigation a:hover {
+  color: black;
+  background-color: #ffd543;
+}
+.navigation a:focus {
+  color: white;
+  border-bottom: 5px solid #ffd543;
+}
+
+header {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  position: relative;
+  font-family: "Permanent Marker", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #747274;
+  text-align: center;
+}
+
+section {
+  font-family: "Montserrat", sans-serif;
+  padding: 1rem;
+  align-items: center;
+}
+
+.forecastcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.fivedaytemp {
+  grid-row: 2;
+  grid-column: 1/5;
+}
+
+.content {
+  background-color: #52b7b3;
+}
+
+.datainput {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #006d77;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: white;
+  font-size: 1.25rem;
+  max-width: 1080px;
+  padding: 0.5rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 1rem;
+  text-align: center;
+}
+
+.moto {
+  padding: 1rem;
+}
+#pancakes {
+  min-height: 60px;
+  background-color: #ad0000;
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.heroimg {
+  position: relative;
+  padding: 0;
+}
+.heroimg img{
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+.heroimage {
+  max-width: 100%;
+}
+.weathersummary {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 5px;
+  background-color: #fff;
+  box-shadow: 0px 5px 8px #888888;
+  opacity: 75%;
+  line-height: 1rem;
+  margin: 0;
+  font-size: .85rem;
+}
+.forecastcontainer {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row: 1;
+  gap: 0px 10px
+}
+.fiveday {
+  opacity: 90%;
+  background-color: #fff;
+  padding: 1rem;
+  font-weight: bolder;
+}
+.forecastimgs {
+  max-width: 50px;
+}
+/* section.towndetails.content {
+  flex-direction: unset;
+} */
+
+section.contentarticle {
+  background-color: #52b7b3;
+  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+}
+
+.contentarticle p {
+  text-align: left;
+}
+
+section.content.forecast {
+  display: none;
+}
+.articleimg {
+  float: right;
+  max-width: 300px;
+  margin: .5rem
+}
+.content p {
+  text-align: left;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div.address {
+  text-align: center;
+}
+h3.co-contact {
+  font-weight: bolder;
+}
+.map-image {
+  max-width: 100%;
+}
+
+/* unvisited link */
+footer a:link {
+  color: white;
+}
+
+/* visited link */
+footer a:visited {
+  color: rgb(255, 255, 255);
+}
+
+/* mouse over link */
+footer a:hover {
+  font-weight: bolder;
+}
+
+/* selected link */
+footer a:active {
+  color: white;
+}
+
+/* unvisited link */
+nav a:link {
+  color: #747274;
+}
+
+/* visited link */
+nav a:visited {
+  color: #747274;
+}
+
+section #title {
+  grid-column: span 1;
+}
+
+section.townSections h3 {
+  margin: 0;
+}
+
+.townSections {
+  padding: 0;
+}
+
+.townArticles {
+  background-color: white;
+  padding: .75em;
+  margin-bottom: 1rem;
+}
+
+.townArticles h3 {
+  font-size: small;
+}
+
+article img {
+  max-width: 100%;
+}
+
+section h2 {
+  text-align: center;
+}
+
+input:focus:invalid {
+  border-left: 0.5rem solid red;
+}
+
+input:focus:valid {
+  border-left: 0.5rem solid green;
+}
+
+span::after {
+  position: absolute;
+  padding-left: 5px;
+}
+
+.formfields {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.datainput span {
+  display: none;
+}
+
+.datainput textarea {
+  margin-top: 0.5em;
+}
+
+.datainput:nth-child(9) {
+  margin: 12rem 0;
+}
+
+#ratingvalue {
+  margin: 0 5px;
+}
+
+.radioinput:nth-child(1) {
+  padding-top: 0.3rem;
+}
+
+div.datainput button {
+  text-align: center;
+  font-weight: bolder;
+  background-color: #4f5d73;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.datainput {
+  display: flex;
+  flex-direction: row;
+}
+
+.datainput label {
+  flex-basis: 1rem;
+  padding: 0.2em;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio label {
+  flex-basis: 0.1rem;
+}
+
+.radioinput {
+  flex-direction: column;
+}
+
+.datainput span {
+  display: block;
+}
+
+fieldset {
+  border: none;
+}
+
+section.gallery {
+  margin: .7em 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  grid-gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  text-align: left;
+  background-color: #52b7b3;
+  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+}
+
+.weatherpics {
+  background-color: white;
+  padding: .5rem;
+}
+
+section #title {
+	grid-column: span 1;
+}
+
+ section.content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 0 0 8rem;
+}
+
+.formfields {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.datainput span {
+  display: none;
+}
+
+.datainput textarea {
+  margin-top: 0.5em;
+}
+
+.datainput:nth-child(9) {
+  margin: 12rem 0;
+}
+
+#ratingvalue {
+  margin: 0 5px;
+}
+
+.radioinput:nth-child(1) {
+  padding-top: 0.3rem;
+}
+
+div.datainput button {
+  text-align: center;
+  font-weight: bolder;
+  background-color: #4f5d73;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.datainput {
+  display: flex;
+  flex-direction: row;
+}
+
+.datainput label {
+  flex-basis: 1rem;
+  padding: 0.2em;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio label {
+  flex-basis: 0.1rem;
+}
+
+.radioinput {
+  flex-direction: column;
+}
+
+.datainput span {
+  display: block;
+}
+
+fieldset {
+  border: none;
+}
+
+/* .events {
+  background-color: #83c5be;
+  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+  max-width: 400px;
+  margin: .5rem auto;
+} */
+
+section.events {
+  font-size: 1rem;
+  border:10px solid black;
+  min-height: 1.5rem;
+  max-width: 400px;
+  resize: both;
+  background: #83c5be;
+  text-align: center;
+  margin: 1rem auto;
+  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
+}
+
+input, select, textarea {
+  padding: .5rem;
+}
+
+.map {
+  margin: 0 5rem 0 0;
+}

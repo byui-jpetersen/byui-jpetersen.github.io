@@ -1,0 +1,20 @@
+@media only screen and (min-width: 680px) {
+  .navigation a:first-child {
+    display: none;
+  }
+  .navigation a {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navigation a:last-child {
+    padding-right: 0px;
+  }
+  nav {
+    font-size: 1.25rem;
+    padding-bottom: 1rem;
+  }
+
+  .navigation a:nth-child(2) {
+		padding-left: 0px;
+	  }
+}

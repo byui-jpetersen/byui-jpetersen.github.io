@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Satiracle Weather Site" />
+    <title>A Chance of Sun</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="pancakes">
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion.
+    </div>
+    <header>
+      <img src="images/logo.png" alt="weather logo" class="logo" />
+      <section>
+        <h1>A Chance of Sun</h1>
+        <div class="moto">We guarantee a chance of sun... somewhere!</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">&#9776; Menu</a></li>
+        <li><a href="/lesson11/">Home</a></li>
+        <li><a class="preston" href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2><span id="townName">Fish Haven</span> Idaho</h2>
+      <div class="heroimg">
+        <picture class="Wk6Hero">
+          <source media="(max-width: 430px)" srcset="images/heroimgsmall.jpg" />
+          <source media="(max-width: 700px)" srcset="images/heroimgmed.jpg" />
+          <img src="images/heroimglrg.jpg" alt="Green scenery" />
+        </picture>
+        <section class="weathersummary">
+          <h3>Weather Summary</h3>
+          <p>Currently: <span id="currently"></span></p>
+          <p>Temperature: <span id="hightemp"></span>°F</p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Windchill: <span id="windchill"></span>°F</p>
+          <p>Wind Speed: <span id="speed"></span>mph</p>
+        </section>
+      </div>
+      <section class="content forecast">
+        <h3>5 Day Forecast</h3>
+        <div class="forecastcontainer">
+          <div class="fiveday">
+            <div class="fivedaytemp"></div>
+          </div>
+          <div class="fiveday">
+            <div class="fivedaytemp"></div>
+          </div>
+          <div class="fiveday">
+            <div class="fivedaytemp"></div>
+          </div>
+          <div class="fiveday">
+            <div class="fivedaytemp"></div>
+          </div>
+          <div class="fiveday">
+            <div class="fivedaytemp"></div>
+          </div>
+        </div>
+      </section>
+      <section class="events"></section>
+      <section class="contentarticle">
+        <h2>Little Fish Haven, Idaho, is paradise for residents</h2>
+        <h3>Kurt Friedemann Idaho State Journal - Dec 26, 2000</h3>
+        <img class="articleimg" alt="beautiful fish haven" src="images/fish-haven.jpg" />
+        <p>
+          FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who
+          drive by recognize the raw beauty of a place ringed by high desert
+          mountains and bordered by the shores of a vast natural lake.
+        </p>
+
+        <p>
+          In winter the hills outside this small paradise echo with the sharp
+          whine of snow machines and in the summer thousands of tourists ply the
+          lake's bright blue waters with water skis or fishing poles.
+        </p>
+
+        <p>But they don't live there. It's different living in Fish Haven.</p>
+
+        <p>
+          The little town sits just on the Idaho side of U.S. Highway 89 tucked
+          in between Bear Lake's west side and the mountains.
+        </p>
+
+        <p>
+          It's not technically a city or a town, it's really nothing more than
+          the proverbial wide spot in the road. But people call it a town even
+          though there isn't a city council, just the Bear Lake County
+          Commission that oversees development there.
+        </p>
+        <p><a href="https://www.deseret.com/2000/12/26/19546274/little-fish-haven-idaho-is-paradise-for-residents" target="_blank" rel="noreferrer">Click here to continue the story</a></p>
+      </section>
+
+      <section class="content contact">
+        <h3>Contact Information</h3>
+        <div class="contact-container">
+          <div class="map">
+            <img class="map-image" alt="map of the area" src="images/map.png" />
+          </div>
+          <div class="address">
+            <h3 class="co-contact">A Chance of Sun</h3>
+            <div>123 Sesame St</div>
+            <div>Preston, ID 83263</div>
+            <div>&phone; 208-555-1212</div>
+            <div>&#9993; email@achanceofsun.com</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | Jeremy R. Petersen | California
+        |
+        <a href="https://www.byui.edu/online" target="_blank" rel="noreferrer"
+          >BYU-I Online Learning</a
+        >
+      </p>
+      <p>Current Date: <span id="currentdate"></span></p>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="js/font.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/windchill.js"></script>
+      <script src="js/fishhaven-api.js"></script>
+      <script src="js/events.js"></script>
+    </footer>
+  </body>
+</html>

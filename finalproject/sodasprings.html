@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Satiracle Weather Site" />
+    <title>A Chance of Sun</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="pancakes">
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
+      park pavilion.
+    </div>
+    <header>
+      <img src="images/logo.png" alt="weather logo" class="logo" />
+      <section>
+        <h1>A Chance of Sun</h1>
+        <div class="moto">We guarantee a chance of sun... somewhere!</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a class="ham" href="#">&#9776; Menu</a></li>
+        <li><a href="/lesson11/">Home</a></li>
+        <li><a class="preston" href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2><span id="townName">Soda Springs</span> Idaho</h2>
+      <div class="heroimg">
+        <picture class="Wk6Hero">
+          <source media="(max-width: 430px)" srcset="images/heroimgsmall.jpg" />
+          <source media="(max-width: 700px)" srcset="images/heroimgmed.jpg" />
+          <img src="images/heroimglrg.jpg" alt="Green scenery" />
+        </picture>
+        <section class="weathersummary">
+          <h3>Weather Summary</h3>
+          <p>Currently: <span id="currently"></span></p>
+          <p>Temperature: <span id="hightemp"></span>°F</p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Windchill: <span id="windchill"></span>°F</p>
+          <p>Wind Speed: <span id="speed"></span>mph</p>
+        </section>
+      </div>
+      <section class="content forecast">
+        <h3>5 Day Forecast</h3>
+        <div class="forecastcontainer">
+          <div class="fiveday">
+            <div class="fivedaytemp"></div>
+          </div>
+          <div class="fiveday">
+            <div class="fivedaytemp"></div>
+          </div>
+          <div class="fiveday">
+            <div class="fivedaytemp"></div>
+          </div>
+          <div class="fiveday">
+            <div class="fivedaytemp"></div>
+          </div>
+          <div class="fiveday">
+            <div class="fivedaytemp"></div>
+          </div>
+        </div>
+      </section>
+      <section class="events"></section>
+      <section class="contentarticle">
+        <h2>Average Weather in Soda Springs</h2>
+        <img class="articleimg" alt="view of the springs" src="images/soda-springs.jpg" />
+        <p>
+          In Soda Springs, the summers are warm, dry, and mostly clear and the
+          winters are freezing, snowy, and partly cloudy. Over the course of the
+          year, the temperature typically varies from 10°F to 81°F and is rarely
+          below -6°F or above 87°F.
+        </p>
+
+        <p>
+          Based on the tourism score, the best time of year to visit Soda
+          Springs for warm-weather activities is from early July to mid August.
+        </p>
+
+        <p>
+          The warm season lasts for 3.2 months, from June 10 to September 16,
+          with an average daily high temperature above 70°F. The hottest day of
+          the year is July 26, with an average high of 81°F and low of 48°F.
+        </p>
+
+        <p>
+          The cold season lasts for 3.4 months, from November 21 to March 3,
+          with an average daily high temperature below 37°F. The coldest day of
+          the year is January 27, with an average low of 10°F and high of 26°F.
+        </p>
+        <p>
+          <a
+            href="https://weatherspark.com/y/2757/Average-Weather-in-Soda-Springs-Idaho-United-States-Year-Round#Sections-BestTime"
+            target="_blank"
+            rel="noreferrer"
+            >Continue Reading...</a
+          >
+        </p>
+      </section>
+
+      <section class="content contact">
+        <h3>Contact Information</h3>
+        <div class="contact-container">
+          <div class="map">
+            <img class="map-image" alt="map of the area" src="images/map.png" />
+          </div>
+          <div class="address">
+            <h3 class="co-contact">A Chance of Sun</h3>
+            <div>123 Sesame St</div>
+            <div>Preston, ID 83263</div>
+            <div>&phone; 208-555-1212</div>
+            <div>&#9993; email@achanceofsun.com</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="currentyear"></span> | Jeremy R. Petersen | California
+        |
+        <a href="https://www.byui.edu/online" target="_blank" rel="noreferrer"
+          >BYU-I Online Learning</a
+        >
+      </p>
+      <p>Current Date: <span id="currentdate"></span></p>
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+      <script src="js/font.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/windchill.js"></script>
+      <script src="js/sodasprings-api.js"></script>
+      <script src="js/events.js"></script>
+    </footer>
+  </body>
+</html>
