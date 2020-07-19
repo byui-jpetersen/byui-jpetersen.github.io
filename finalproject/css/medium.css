@@ -21,9 +21,6 @@
       width: 100%;
       height: 600px;
     }
-    .radio {
-      /*display: none;*/
-    }
     .images {
       overflow: hidden;
       top: 0;
@@ -78,5 +75,14 @@
 }
 section.content.forecast {
   display: flex;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 1rem;
+  border: 8px solid #747274;
+  width: 90%;
 }
   }
