@@ -68,9 +68,11 @@ nav {
 }
 
 section {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Pantono Sans", sans-serif;
   padding: 1rem;
   align-items: center;
+  opacity: 75%;
+  box-shadow: 0px 5px 8px #535353;
 }
 
 .forecastcontainer {
@@ -97,11 +99,8 @@ footer {
   display: block;
   margin: 0 auto;
   text-align: center;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
   color: white;
   font-size: 1.25rem;
-  max-width: 1080px;
   padding: 0.5rem;
 }
 
@@ -115,15 +114,6 @@ h3 {
 .moto {
   padding: 1rem;
 }
-#pancakes {
-  min-height: 60px;
-  background-color: #ad0000;
-  color: white;
-  font-size: 2rem;
-  font-weight: bolder;
-  padding-top: 1rem;
-  text-align: center;
-}
 
 main {
   text-align: center;
@@ -131,27 +121,9 @@ main {
   justify-content: center;
   margin: 0 auto;
 }
-
-.heroimg {
-  position: relative;
-  padding: 0;
-}
-.heroimg img{
-  position: relative;
-  padding: 0;
-  width: 100%;
-}
-.heroimage {
-  max-width: 100%;
-}
 .weathersummary {
-  position: absolute;
-  top: 5px;
-  left: 5px;
   padding: 5px;
   background-color: #fff;
-  box-shadow: 0px 5px 8px #888888;
-  opacity: 75%;
   line-height: 1rem;
   margin: 0;
   font-size: .85rem;
@@ -164,22 +136,15 @@ main {
   gap: 0px 10px
 }
 .fiveday {
-  opacity: 90%;
-  background-color: #fff;
+  opacity: 70%;
+  background-color: #747274;
   padding: 1rem;
   font-weight: bolder;
 }
 .forecastimgs {
   max-width: 50px;
 }
-/* section.towndetails.content {
-  flex-direction: unset;
-} */
 
-section.contentarticle {
-  background-color: #52b7b3;
-  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
-}
 
 .contentarticle p {
   text-align: left;

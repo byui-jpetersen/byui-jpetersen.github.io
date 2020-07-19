@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Satiracle Weather Site" />
-    <title>A Chance of Sun</title>
+    <meta name="description" content="Your Adventure Rental Destination" />
+    <title>~Scoots</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/small.css" rel="stylesheet" />
@@ -19,40 +19,85 @@
     <nav>
       <div class="navigation">
         <a class="ham" href="#">&#9776; Menu</a>
-        <a class="preston" href="preston.html">Rentals</a>
-        <a href="sodasprings.html">Reservations</a>
-        <img src="images/logo.png" alt="weather logo" class="logo" />
-        <a href="fishhaven.html">Tours</a>
-        <a href="stormcenter.html">Contact</a>
+        <a class="rentals" href="rentals.html">Rentals</a>
+        <a href="reservations.html">Reservations</a>
+        <img src="images/logo.png" alt="scoots logo" class="logo" />
+        <a href="tours.html">Tours</a>
+        <a href="contact.html">Contact</a>
       </div>
     </nav>
     <main>
+      <div id="homepage-slider" class="st-slider">
+        <input type="radio" class="cs_anchor radio" name="slider" id="slide1" />
+        <input type="radio" class="cs_anchor radio" name="slider" id="slide2" />
+        <input type="radio" class="cs_anchor radio" name="slider" id="slide3" />
+        <input
+          type="radio"
+          class="cs_anchor radio"
+          name="slider"
+          id="play1"
+          checked=""
+        />
+
+        <div class="images">
+          <div class="images-inner">
+            <div class="image-slide">
+              <div class="image bg-yellow">
+                <img src="images/cozumel.jpg" />
+              </div>
+            </div>
+            <div class="image-slide">
+              <div class="image bg-blue">
+                <img src="images/rentaloffice.jpg" />
+              </div>
+            </div>
+            <div class="image-slide">
+              <div class="image bg-red"><img src="images/jeep.jpg" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="content">
         <article class="satire">
-          <h2>Turn Back Tornadoes</h2>
-          <p class="articleauthor">
-            June 18, 2020 <br />Written by John Johnston
-          </p>
+          <h2>Welcome to ~Scoots</h2>
           <p>
-            In a press conference today the President of the weather committee
-            stated that we should fight back against the tornadoes. Several
-            ideas were proposed such as bombing tornadoes, create a large vacuum
-            to remove the air from the tornado, but the most time was spent
-            talking about flying planes around a tornado in the opposite
-            direction.
-          </p>
-
-          <p>
-            The President has decided to put resources into this effort in order
-            to reduce the damage done to communities across the United States.
-            The plan is to send two planes circling around a tornado, flying in
-            the opposite direction. The purpose of this is to attempt to slow
-            down the rotation of the tornado and hopefully reduce or eliminate
-            the damage done by the tornado.
+            ~Scoots is a motor scooter rental company located on the island of
+            Cozumel off the coast of Mexico in the western Caribbean Sea. We
+            cater to locals, walk-in tourists, enthusiasts, and cruise-based
+            tourists looking for a little adventure. We have friendly staff and
+            easy to rent services of motor scooters, jeeps, and side-by-sides
+            ATVs.
           </p>
         </article>
       </section>
-      <section class="towndetails content"></section>
+      <section class="weathersummary">
+        <h2>Weather Summary</h2>
+        <p>Currently: <span id="currently"></span></p>
+        <p>Temperature: <span id="hightemp"></span>°F</p>
+        <p>Humidity: <span id="humidity"></span>%</p>
+        <p>Windchill: <span id="windchill"></span>°F</p>
+        <p>Wind Speed: <span id="speed"></span>mph</p>
+      </section>
+    <section class="content forecast">
+      <h3>5 Day Forecast</h3>
+      <div class="forecastcontainer">
+        <div class="fiveday">
+          <div class="fivedaytemp"></div>
+        </div>
+        <div class="fiveday">
+          <div class="fivedaytemp"></div>
+        </div>
+        <div class="fiveday">
+          <div class="fivedaytemp"></div>
+        </div>
+        <div class="fiveday">
+          <div class="fivedaytemp"></div>
+        </div>
+        <div class="fiveday">
+          <div class="fivedaytemp"></div>
+        </div>
+      </div>
+    </section>
     </main>
 
     <footer>
@@ -62,11 +107,6 @@
         <a href="https://www.byui.edu/online" target="_blank" rel="noreferrer"
           >BYU-I Online Learning</a
         >
-      </p>
-      <p>
-        Wireframes: <a href="https://wireframe.cc/2U8QgT">Small</a> |
-        <a href="https://wireframe.cc/a8zk0D">Medium</a> |
-        <a href="https://wireframe.cc/Jflom6">Large</a>
       </p>
       <p>Current Date: <span id="currentdate"></span></p>
       <script src="js/main.js"></script>

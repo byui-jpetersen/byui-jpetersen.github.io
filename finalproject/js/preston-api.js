@@ -1,5 +1,5 @@
 const apiURL =
-  "https://api.openweathermap.org/data/2.5/forecast?lat=42.1&lon=-111.88&units=imperial&appid=cd296ba4edb3930334e2b3b8876bb180";
+  "https://api.openweathermap.org/data/2.5/forecast?lat=20.51&lon=-86.95&units=imperial&appid=cd296ba4edb3930334e2b3b8876bb180";
 var weekday = new Array(7);
 weekday[0] = "Sunday";
 weekday[1] = "Monday";
@@ -13,7 +13,7 @@ fetch(apiURL)
   .then((jsObject) => {
     //console.log(jsObject);
     const fivedayforecast = jsObject.list.filter((f) =>
-      f.dt_txt.includes("18:00:00")
+      f.dt_txt.includes("12:00:00")
     );
     document.getElementById("currently").textContent =
       fivedayforecast[0].weather[0].description;
