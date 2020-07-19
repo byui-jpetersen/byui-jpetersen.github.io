@@ -4,6 +4,7 @@ body {
   display: block;
   margin: auto;
   text-align: left;
+  min-width: 450px;
 }
 
 .scoots {
@@ -17,13 +18,16 @@ body {
 }
 
 .calltoaction {
-  float: right;
   margin-top: 25px;
-  margin-right: 25px;
 }
+
+.order { display: flex; flex-direction: column; }
+.scoots { order: 2; }
+.calltoaction { order: 1; }
 
 button {
   background-color: #e7b84b;
+  width: 100%;
   padding: 1rem;
   border-radius: 5px;
   font-weight: bolder;
@@ -31,9 +35,15 @@ button {
 
 .navigation {
   display: block;
+  list-style: none;
+}
+
+.navigation a:first-child {
+  display: block;
 }
 
 .navigation a {
+  display: none;
   padding-right: 5px;
   padding-left: 5px;
 }
@@ -53,13 +63,12 @@ button {
 }
 
 header {
-  position: absolute;
   text-align: center;
   width: 100%;
 }
 
 nav {
-  position: relative;
+  position: block;
   font-family: "Permanent Marker", sans-serif;
   font-weight: bold;
   font-size: 1rem;
@@ -226,12 +235,12 @@ section.townSections h3 {
   font-size: small;
 }
 
-article img {
-  max-width: 100%;
-}
-
 section h2 {
   text-align: center;
+}
+
+iframe {
+  max-width: 100%;
 }
 
 input:focus:invalid {
@@ -271,17 +280,6 @@ span::after {
 
 .radioinput:nth-child(1) {
   padding-top: 0.3rem;
-}
-
-div.datainput button {
-  text-align: center;
-  font-weight: bolder;
-  background-color: #4f5d73;
-  color: white;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 8px;
-  border: none;
 }
 
 .datainput {
@@ -326,11 +324,6 @@ section.gallery {
   text-align: left;
   background-color: #52b7b3;
   box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
-}
-
-.weatherpics {
-  background-color: white;
-  padding: .5rem;
 }
 
 section #title {
@@ -416,6 +409,9 @@ div.datainput button {
 
 fieldset {
   border: none;
+}
+#homepage-slider {
+  display: none;
 }
 
 /* .events {
