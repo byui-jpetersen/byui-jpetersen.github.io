@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Satiracle Weather Site" />
-    <title>A Chance of Sun</title>
+    <meta name="description" content="Your Adventure Rental Destination" />
+    <title>~Scoots</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/small.css" rel="stylesheet" />
@@ -12,101 +12,70 @@
     <link href="css/large.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="pancakes">
-      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city
-      park pavilion.
-    </div>
     <header>
-      <img src="images/logo.png" alt="weather logo" class="logo" />
-      <section>
-        <h1>A Chance of Sun</h1>
-        <div class="moto">We guarantee a chance of sun... somewhere!</div>
-      </section>
+      <div class="scoots">~Scoots</div>
+      <div class="calltoaction"><a href="https://byuijpetersen.github.io/finalproject/reservations.html" class="btn">RESERVE NOW</a></div>
     </header>
     <nav>
-      <ul class="navigation">
-        <li><a class="ham" href="#">&#9776; Menu</a></li>
-        <li><a href="/lesson11/">Home</a></li>
-        <li><a class="preston" href="preston.html">Preston</a></li>
-        <li><a href="sodasprings.html">Soda Springs</a></li>
-        <li><a href="fishhaven.html">Fish Haven</a></li>
-        <li><a href="stormcenter.html">Storm Center</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
+      <div class="navigation" id="navigation">
+        <a class="ham" href="#">&#9776; Menu</a>
+        <a class="rentals" href="rentals.html">Rentals</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="index.html">
+        <img src="images/logo.png" alt="scoots logo" id="logo" /></a>
+        <a href="tours.html">Tours</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
     <main>
-      <h2><span id="townName">Soda Springs</span> Idaho</h2>
-      <div class="heroimg">
-        <picture class="Wk6Hero">
-          <source media="(max-width: 430px)" srcset="images/heroimgsmall.jpg" />
-          <source media="(max-width: 700px)" srcset="images/heroimgmed.jpg" />
-          <img src="images/heroimglrg.jpg" alt="Green scenery" />
-        </picture>
-        <section class="weathersummary">
-          <h3>Weather Summary</h3>
-          <p>Currently: <span id="currently"></span></p>
-          <p>Temperature: <span id="hightemp"></span>°F</p>
-          <p>Humidity: <span id="humidity"></span>%</p>
-          <p>Windchill: <span id="windchill"></span>°F</p>
-          <p>Wind Speed: <span id="speed"></span>mph</p>
-        </section>
-      </div>
-      <section class="content forecast">
-        <h3>5 Day Forecast</h3>
-        <div class="forecastcontainer">
-          <div class="fiveday">
-            <div class="fivedaytemp"></div>
-          </div>
-          <div class="fiveday">
-            <div class="fivedaytemp"></div>
-          </div>
-          <div class="fiveday">
-            <div class="fivedaytemp"></div>
-          </div>
-          <div class="fiveday">
-            <div class="fivedaytemp"></div>
-          </div>
-          <div class="fiveday">
-            <div class="fivedaytemp"></div>
-          </div>
-        </div>
-      </section>
-      <section class="events"></section>
-      <section class="contentarticle">
-        <h2>Average Weather in Soda Springs</h2>
-        <img class="articleimg" alt="view of the springs" src="images/soda-springs.jpg" />
-        <p>
-          In Soda Springs, the summers are warm, dry, and mostly clear and the
-          winters are freezing, snowy, and partly cloudy. Over the course of the
-          year, the temperature typically varies from 10°F to 81°F and is rarely
-          below -6°F or above 87°F.
-        </p>
-
-        <p>
-          Based on the tourism score, the best time of year to visit Soda
-          Springs for warm-weather activities is from early July to mid August.
-        </p>
-
-        <p>
-          The warm season lasts for 3.2 months, from June 10 to September 16,
-          with an average daily high temperature above 70°F. The hottest day of
-          the year is July 26, with an average high of 81°F and low of 48°F.
-        </p>
-
-        <p>
-          The cold season lasts for 3.4 months, from November 21 to March 3,
-          with an average daily high temperature below 37°F. The coldest day of
-          the year is January 27, with an average low of 10°F and high of 26°F.
-        </p>
-        <p>
-          <a
-            href="https://weatherspark.com/y/2757/Average-Weather-in-Soda-Springs-Idaho-United-States-Year-Round#Sections-BestTime"
-            target="_blank"
-            rel="noreferrer"
-            >Continue Reading...</a
-          >
-        </p>
-      </section>
+      <h2><span>Reservations</span> 
+      </h2>
+      <section class="content">
+        <h3>Book Your Reservation</h3>
+        <form method="get" action="/final-project/html/thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class='personalinfo'>Full Name<span class="required">* </span><input type='text' name='fname'
+                        pattern='[a-zA-Z ]{5,}' required placeholder=""></label>
+                <label class='personalinfo'>Phone<span class="required">*</span><input type='tel' name='phone' required
+                        pattern="[0-9]{10}" maxlength="14" placeholder='9991114444'></label>
+                <label class='personalinfo'>State<span></span><input type='text' name='state' minlength="2"></label>
+                <label class='personalinfo'>Country<span></span><input type='text' name='Country'></label>
+                <label class='personalinfo' class="required">Email<span class="required">*</span><input type='email'
+                  name='email' placeholder='abc@gmail.com' required></label>
+                <br><span class="required">*</span><span>Required</span>
+            </fieldset>
+            <fieldset>
+                <legend>Rental Information</legend>
+                <label class='rental-info'>Pickup Date<input type='date' name='rental-date'></label>
+                <label class='rental-info'>Return Date<input type='date' name='rental-date'></label>
+                <label class='rental-info' for='rental-list'>Rental Type<input name='rental-type' list='rental-data' id="rental-list"></label>
+                <datalist id='rental-data'>
+                    <option value="Honda Metro Scooter"></option>
+                    <option value="Honda Dio Scooter"></option>
+                    <option value="Honda PCX150 Scooter"></option>
+                    <option value="Honda Pioneer ATV"></option>
+                    <option value="Jeep Wrangler - 4 door with a/c"></option>
+                    <option value="Jeep Wrangler - 2 door"></option>
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label class='rental-info'>Cruise Line<input type='text' name='Cruise'></label>
+                <label class='rental-info' for='specialaccom'>Special Accomodations<input name='special' list='special' id="specialaccom"></label>
+          <datalist id='special'>
+              <option value="Drop-Off Request"></option>
+              <option value="Training Wheels"></option>
+              <option value="Additional Safety Gear"></option>
+              <option value="Other"></option>
+          </datalist>
+                <label class='rental-info'>Comments<textarea class='text-area'></textarea></label>
+            </fieldset>
+            <label class='agreement'><input input type="checkbox" id="agreement" value="Rental Agreement"><a
+                    href="/final-project/data/RENTAL AGREEMENT.pdf" target="blank">Rental Agreement</a></label>
+            <input class='submit-button' type='submit' value='Make my reservation'>
+        </form>
+        </section> 
 
       <section class="content contact">
         <h3>Contact Information</h3>

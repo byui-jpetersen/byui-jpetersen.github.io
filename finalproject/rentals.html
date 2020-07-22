@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Satiracle Weather Site" />
-    <title>A Chance of Sun</title>
+    <meta name="description" content="Your Adventure Rental Destination" />
+    <title>~Scoots</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/small.css" rel="stylesheet" />
@@ -12,15 +12,16 @@
     <link href="css/large.css" rel="stylesheet" />
   </head>
   <header>
-    <div class="scoots">~Scoots</div>
-    <div class="calltoaction"><button>RESERVE NOW</button></div>
+    <div class="scoots" id="scoots">~Scoots</div>
+    <div class="calltoaction"><a href="https://byuijpetersen.github.io/finalproject/reservations.html" class="btn">RESERVE NOW</a></div>
   </header>
   <nav>
-    <div class="navigation">
+    <div class="navigation" id="navigation">
       <a class="ham" href="#">&#9776; Menu</a>
       <a class="rentals" href="rentals.html">Rentals</a>
       <a href="reservations.html">Reservations</a>
-      <img src="images/logo.png" alt="scoots logo" class="logo" />
+      <a href="index.html">
+        <img src="images/logo.png" alt="scoots logo" id="logo" /></a>
       <a href="tours.html">Tours</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -57,35 +58,6 @@
       </div>
     </div>
     <main>
-        <section class="weathersummary">
-          <h3>Weather Summary</h3>
-          <p>Currently: <span id="currently"></span></p>
-          <p>Temperature: <span id="hightemp"></span>°F</p>
-          <p>Humidity: <span id="humidity"></span>%</p>
-          <p>Windchill: <span id="windchill"></span>°F</p>
-          <p>Wind Speed: <span id="speed"></span>mph</p>
-        </section>
-      </div>
-      <section class="content forecast">
-        <h3>5 Day Forecast</h3>
-        <div class="forecastcontainer">
-          <div class="fiveday">
-            <div class="fivedaytemp"></div>
-          </div>
-          <div class="fiveday">
-            <div class="fivedaytemp"></div>
-          </div>
-          <div class="fiveday">
-            <div class="fivedaytemp"></div>
-          </div>
-          <div class="fiveday">
-            <div class="fivedaytemp"></div>
-          </div>
-          <div class="fiveday">
-            <div class="fivedaytemp"></div>
-          </div>
-        </div>
-      </section>
       <section class="contentarticle">
         <h2>Rental Information</h2>
         <p>

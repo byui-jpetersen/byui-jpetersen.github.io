@@ -1,3 +1,4 @@
+
 body {
   font-family: "Pontano Sans", sans-serif;
   font-size: 16px;
@@ -8,7 +9,6 @@ body {
 }
 
 .scoots {
-  float: left;
   margin-top: 25px;
   margin-left: 25px;
   font-family: "Permanent Marker", sans-serif;
@@ -19,24 +19,37 @@ body {
 
 .calltoaction {
   margin-top: 25px;
-}
-
-.order { display: flex; flex-direction: column; }
-.scoots { order: 3; }
-.calltoaction { order: 1; }
-.logo {order: 2; }
-
-button {
+  margin-right: 25px;
+  margin-bottom: 25px;
   background-color: #e7b84b;
   width: 100%;
   padding: 1rem;
   border-radius: 5px;
+  font-family: "Permanent Marker", sans-serif;
   font-weight: bolder;
 }
+  .navigation a:not(:first-child) {display: none;}
+  .navigation a.icon {
+    display: block;
+}
+
+  .navigation.responsive {position: relative;}
+  .navigation.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation.responsive a {
+    float: none;
+    display: block;
+  }
 
 .navigation {
   display: block;
-  list-style: none;
+}
+
+#logo {
+  display: none;
 }
 
 .navigation a:first-child {
@@ -59,7 +72,6 @@ button {
   background-color: #ffd543;
 }
 .navigation a:focus {
-  color: white;
   border-bottom: 5px solid #ffd543;
 }
 
@@ -69,7 +81,7 @@ header {
 }
 
 nav {
-  position: block;
+  display: block;
   font-family: "Permanent Marker", sans-serif;
   font-weight: bold;
   font-size: 1rem;
@@ -339,88 +351,9 @@ section #title {
   text-align: left;
 }
 
-form {
-  max-width: 600px;
-  margin: 0 0 0 8rem;
-}
-
-.formfields {
-  padding: 0.5rem 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.datainput span {
-  display: none;
-}
-
-.datainput textarea {
-  margin-top: 0.5em;
-}
-
-.datainput:nth-child(9) {
-  margin: 12rem 0;
-}
-
-#ratingvalue {
-  margin: 0 5px;
-}
-
-.radioinput:nth-child(1) {
-  padding-top: 0.3rem;
-}
-
-div.datainput button {
-  text-align: center;
-  font-weight: bolder;
-  background-color: #4f5d73;
-  color: white;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 8px;
-  border: none;
-}
-
-.datainput {
-  display: flex;
-  flex-direction: row;
-}
-
-.datainput label {
-  flex-basis: 1rem;
-  padding: 0.2em;
-}
-
-.radio {
-  display: flex;
-  flex-direction: column;
-}
-
-.radio label {
-  flex-basis: 0.1rem;
-}
-
-.radioinput {
-  flex-direction: column;
-}
-
-.datainput span {
-  display: block;
-}
-
-fieldset {
-  border: none;
-}
 #homepage-slider {
   display: none;
 }
-
-/* .events {
-  background-color: #83c5be;
-  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
-  max-width: 400px;
-  margin: .5rem auto;
-} */
 
 section.events {
   font-size: 1rem;
@@ -441,3 +374,80 @@ input, select, textarea {
 .map {
   margin: 0 5rem 0 0;
 }
+
+form {
+  background-color: white;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+  form fieldset {
+    margin: 2rem 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+  form legend {
+    margin: 0 4rem;
+    padding: 0 1rem;
+    text-align: center;
+    font-family: "Pontano Sans", sans-serif;
+  }
+  
+  form label.personalinfo,
+  form label.rental-info {
+    display: block;
+    padding: 1rem;
+    font-family: "Pontano Sans", sans-serif;
+    font-size: 1.25rem;
+    line-height: 2rem; }
+  form label.personalinfo input,
+  form label.rental-info input,
+  form .text-area {
+    display: block;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 1rem;
+    width: 90%;
+    max-width: 20rem;
+    background-color: lightgray;
+   }
+  form input.submit-button {
+    border: none;
+    background-color: #CF8643;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.75rem 1rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    font-size: 1.25rem; }
+  form .text-area {
+    min-height: 200px;
+    margin-top: 10px;
+    padding: 10px; }
+
+.required {
+  color: red; }
+
+.agreement {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  font-family: "Asul", sans-serif; }
+  .agreement input {
+    padding: 10px;
+    margin: 0 10px;
+    height: 20px; }
+
+.thanks {
+  background-color: white;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  text-align: center; }
+  .thanks h1 {
+    font-size: 2rem; }
+  .thanks p {
+    color: black; }
