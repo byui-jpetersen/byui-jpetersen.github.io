@@ -1,4 +1,3 @@
-
 body {
   font-family: "Pontano Sans", sans-serif;
   font-size: 16px;
@@ -28,21 +27,25 @@ body {
   font-family: "Permanent Marker", sans-serif;
   font-weight: bolder;
 }
-  .navigation a:not(:first-child) {display: none;}
-  .navigation a.icon {
-    display: block;
+.navigation a:not(:first-child) {
+  display: none;
+}
+.navigation a.icon {
+  display: block;
 }
 
-  .navigation.responsive {position: relative;}
-  .navigation.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navigation.responsive a {
-    float: none;
-    display: block;
-  }
+.navigation.responsive {
+  position: relative;
+}
+.navigation.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.navigation.responsive a {
+  float: none;
+  display: block;
+}
 
 .navigation {
   display: block;
@@ -90,10 +93,7 @@ nav {
 }
 
 section {
-  font-family: "Pantono Sans", sans-serif;
-  padding: 1rem;
   align-items: center;
-  box-shadow: 0px 5px 8px #535353;
 }
 
 .forecastcontainer {
@@ -138,23 +138,21 @@ h3 {
 
 main {
   text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
 }
 .weathersummary {
   padding: 5px;
   background-color: #fff;
   line-height: 1rem;
   margin: 0;
-  font-size: .85rem;
+  font-size: 0.85rem;
+  width: 100%;
 }
 .forecastcontainer {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-row: 1;
-  gap: 0px 10px
+  gap: 0px 10px;
 }
 .fiveday {
   opacity: 70%;
@@ -166,7 +164,6 @@ main {
   max-width: 50px;
 }
 
-
 .contentarticle p {
   text-align: left;
 }
@@ -174,13 +171,9 @@ main {
 section.content.forecast {
   display: none;
 }
-.articleimg {
-  float: right;
-  max-width: 300px;
-  margin: .5rem
-}
 .content p {
   text-align: left;
+  padding: 1rem;
 }
 .contact-container {
   display: flex;
@@ -192,7 +185,7 @@ div.address {
 h3.co-contact {
   font-weight: bolder;
 }
-.map-image {
+.tour-image {
   max-width: 100%;
 }
 
@@ -230,24 +223,6 @@ section #title {
   grid-column: span 1;
 }
 
-section.townSections h3 {
-  margin: 0;
-}
-
-.townSections {
-  padding: 0;
-}
-
-.townArticles {
-  background-color: white;
-  padding: .75em;
-  margin-bottom: 1rem;
-}
-
-.townArticles h3 {
-  font-size: small;
-}
-
 section h2 {
   text-align: center;
 }
@@ -269,81 +244,11 @@ span::after {
   padding-left: 5px;
 }
 
-.formfields {
-  padding: 0.5rem 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.datainput span {
-  display: none;
-}
-
-.datainput textarea {
-  margin-top: 0.5em;
-}
-
-.datainput:nth-child(9) {
-  margin: 12rem 0;
-}
-
-#ratingvalue {
-  margin: 0 5px;
-}
-
-.radioinput:nth-child(1) {
-  padding-top: 0.3rem;
-}
-
-.datainput {
-  display: flex;
-  flex-direction: row;
-}
-
-.datainput label {
-  flex-basis: 1rem;
-  padding: 0.2em;
-}
-
-.radio {
-  display: flex;
-  flex-direction: column;
-}
-
-.radio label {
-  flex-basis: 0.1rem;
-}
-
-.radioinput {
-  flex-direction: column;
-}
-
-.datainput span {
-  display: block;
-}
-
-fieldset {
-  border: none;
-}
-
-section.gallery {
-  margin: .7em 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-items: center;
-  grid-gap: 1rem;
-  padding: 1rem;
-  align-items: center;
-  text-align: left;
-  background-color: #52b7b3;
-  box-shadow: inset rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
-}
-
 section #title {
-	grid-column: span 1;
+  grid-column: span 1;
 }
 
- section.content {
+section.content {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -355,20 +260,10 @@ section #title {
   display: none;
 }
 
-section.events {
-  font-size: 1rem;
-  border:10px solid black;
-  min-height: 1.5rem;
-  max-width: 400px;
-  resize: both;
-  background: #83c5be;
-  text-align: center;
-  margin: 1rem auto;
-  border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
-}
-
-input, select, textarea {
-  padding: .5rem;
+input,
+select,
+textarea {
+  padding: 0.5rem;
 }
 
 .map {
@@ -382,72 +277,68 @@ form {
   flex-direction: column;
   padding: 3px;
 }
-  form fieldset {
-    margin: 2rem 10px;
-    border: 2px solid #000;
-    border-radius: 5px;
-    padding: 1rem;
-    font-size: 1.25rem;
-  }
-  form legend {
-    margin: 0 4rem;
-    padding: 0 1rem;
-    text-align: center;
-    font-family: "Pontano Sans", sans-serif;
-  }
-  
-  form label.personalinfo,
-  form label.rental-info {
-    display: block;
-    padding: 1rem;
-    font-family: "Pontano Sans", sans-serif;
-    font-size: 1.25rem;
-    line-height: 2rem; }
-  form label.personalinfo input,
-  form label.rental-info input,
-  form .text-area {
-    display: block;
-    font-size: 1rem;
-    border-radius: 4px;
-    padding: 1rem;
-    width: 90%;
-    max-width: 20rem;
-    background-color: lightgray;
-   }
-  form input.submit-button {
-    border: none;
-    background-color: #CF8643;
-    color: white;
-    border-radius: 1rem;
-    padding: 0.75rem 1rem;
-    margin: 0 0 2rem 2%;
-    width: 96%;
-    font-size: 1.25rem; }
-  form .text-area {
-    min-height: 200px;
-    margin-top: 10px;
-    padding: 10px; }
+form fieldset {
+  margin: 2rem 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+form legend {
+  margin: 0 4rem;
+  padding: 0 1rem;
+  text-align: center;
+  font-family: "Pontano Sans", sans-serif;
+}
+
+form label.personalinfo,
+form label.rentalinfo {
+  display: block;
+  padding: 1rem;
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+form label.personalinfo input,
+form label.rentalinfo input,
+form .text-area {
+  display: block;
+  font-size: 1rem;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 90%;
+  max-width: 20rem;
+  background-color: lightgray;
+}
+form input.submit-button {
+  border: none;
+  background-color: #747274;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  font-size: 1.25rem;
+}
+form .text-area {
+  min-height: 200px;
+  margin-top: 10px;
+  padding: 10px;
+}
 
 .required {
-  color: red; }
+  color: red;
+}
 
 .agreement {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 10px;
-  font-family: "Asul", sans-serif; }
-  .agreement input {
-    padding: 10px;
-    margin: 0 10px;
-    height: 20px; }
-
-.thanks {
-  background-color: white;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px white, 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  font-family: "Pontano Sans", sans-serif;
+}
+.agreement input {
   padding: 10px;
-  text-align: center; }
-  .thanks h1 {
-    font-size: 2rem; }
-  .thanks p {
-    color: black; }
+  margin: 0 10px;
+  height: 20px;
+}

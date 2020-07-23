@@ -22,23 +22,21 @@
         <a class="rentals" href="rentals.html">Rentals</a>
         <a href="reservations.html">Reservations</a>
         <a href="index.html">
-        <img src="images/logo.png" alt="scoots logo" id="logo" /></a>
+            <img src="images/logo.png" alt="scoots logo" id="logo" /></a>
         <a href="tours.html">Tours</a>
         <a href="contact.html">Contact</a>
       </div>
     </nav>
     <main>
-      <h2><span>Reservations</span> 
-      </h2>
       <section class="content">
-        <h3>Book Your Reservation</h3>
+        <h2>Book Your Reservation</h2>
         <form method="get" action="/final-project/html/thanks.html">
             <fieldset>
                 <legend>Personal Information</legend>
                 <label class='personalinfo'>Full Name<span class="required">* </span><input type='text' name='fname'
                         pattern='[a-zA-Z ]{5,}' required placeholder=""></label>
                 <label class='personalinfo'>Phone<span class="required">*</span><input type='tel' name='phone' required
-                        pattern="[0-9]{10}" maxlength="14" placeholder='9991114444'></label>
+                        pattern="[0-9]{10}" maxlength="14" placeholder='555551234'></label>
                 <label class='personalinfo'>State<span></span><input type='text' name='state' minlength="2"></label>
                 <label class='personalinfo'>Country<span></span><input type='text' name='Country'></label>
                 <label class='personalinfo' class="required">Email<span class="required">*</span><input type='email'
@@ -47,9 +45,9 @@
             </fieldset>
             <fieldset>
                 <legend>Rental Information</legend>
-                <label class='rental-info'>Pickup Date<input type='date' name='rental-date'></label>
-                <label class='rental-info'>Return Date<input type='date' name='rental-date'></label>
-                <label class='rental-info' for='rental-list'>Rental Type<input name='rental-type' list='rental-data' id="rental-list"></label>
+                <label class='rentalinfo'>Pickup Date<input type='date' name='rental-date'></label>
+                <label class='rentalinfo'>Return Date<input type='date' name='rental-date'></label>
+                <label class='rentalinfo' for='rental-list'>Rental Type<input name='rental-type' list='rental-data' id="rental-list"></label>
                 <datalist id='rental-data'>
                     <option value="Honda Metro Scooter"></option>
                     <option value="Honda Dio Scooter"></option>
@@ -61,37 +59,24 @@
             </fieldset>
             <fieldset>
                 <legend>Additional Information</legend>
-                <label class='rental-info'>Cruise Line<input type='text' name='Cruise'></label>
-                <label class='rental-info' for='specialaccom'>Special Accomodations<input name='special' list='special' id="specialaccom"></label>
+                <label class='rentalinfo'>Cruise Line<input type='text' name='Cruise'></label>
+                <label class='rentalinfo' for='specialaccom'>Special Accomodations<input name='special' list='special' id="specialaccom"></label>
           <datalist id='special'>
               <option value="Drop-Off Request"></option>
               <option value="Training Wheels"></option>
               <option value="Additional Safety Gear"></option>
               <option value="Other"></option>
           </datalist>
-                <label class='rental-info'>Comments<textarea class='text-area'></textarea></label>
+                <label class='rentalinfo'>Comments<textarea class='text-area'></textarea></label>
             </fieldset>
-            <label class='agreement'><input input type="checkbox" id="agreement" value="Rental Agreement"><a
-                    href="/final-project/data/RENTAL AGREEMENT.pdf" target="blank">Rental Agreement</a></label>
-            <input class='submit-button' type='submit' value='Make my reservation'>
+            <p>
+              By clicking the Reserve button you agree to follow all rules and
+              guidelines. At the time of pickup you will a copy of rental terms
+              and conditions.
+            </p>
+            <input class='submit-button' type='submit' value='Reserve'>
         </form>
         </section> 
-
-      <section class="content contact">
-        <h3>Contact Information</h3>
-        <div class="contact-container">
-          <div class="map">
-            <img class="map-image" alt="map of the area" src="images/map.png" />
-          </div>
-          <div class="address">
-            <h3 class="co-contact">A Chance of Sun</h3>
-            <div>123 Sesame St</div>
-            <div>Preston, ID 83263</div>
-            <div>&phone; 208-555-1212</div>
-            <div>&#9993; email@achanceofsun.com</div>
-          </div>
-        </div>
-      </section>
     </main>
     <footer>
       <p>
