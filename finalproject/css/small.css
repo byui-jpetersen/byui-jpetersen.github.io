@@ -16,6 +16,10 @@ body {
   -webkit-text-stroke: 4px black;
 }
 
+#table {
+  max-width: 100%;
+}
+
 .calltoaction {
   margin-top: 15px;
   margin-right: 15px;
