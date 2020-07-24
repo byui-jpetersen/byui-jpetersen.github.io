@@ -17,12 +17,12 @@ body {
 }
 
 .calltoaction {
-  margin-top: 25px;
-  margin-right: 25px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
   background-color: #e7b84b;
   width: 100%;
-  padding: 1rem;
+  padding: .75rem;
   border-radius: 5px;
   font-family: "Permanent Marker", sans-serif;
   font-weight: bolder;
@@ -72,10 +72,10 @@ body {
 }
 .navigation a:hover {
   color: black;
-  background-color: #ffd543;
+  background-color: #e7b84b;
 }
 .navigation a:focus {
-  border-bottom: 5px solid #ffd543;
+  border-bottom: 8px solid #e7b84b;
 }
 
 header {
@@ -188,6 +188,22 @@ h3.co-contact {
 }
 .tour-image {
   max-width: 100%;
+}
+.tours-container{
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+  border: 8px solid #747274;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+.rentals-container {
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+  border: 8px solid #747274;
+  margin-bottom: 2rem;
+  width: 80%;
 }
 
 /* unvisited link */

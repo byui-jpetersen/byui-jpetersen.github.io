@@ -124,7 +124,7 @@ section.content.forecast {
   font-size: 3rem;
   -webkit-text-stroke: 4px black;
 }
-.tour-image img {
+.tour-image {
 min-width: 300px;
 }
 
@@ -136,7 +136,17 @@ min-width: 300px;
   border: 8px solid #747274;
   margin-bottom: 2rem;
 }
-
+.rentals-container {
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+  border: 8px solid #747274;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+.rentals-container p {
+  text-align: center;
+}
 .calltoaction {
   margin-top: 25px;
   margin-right: 25px;
@@ -147,6 +157,7 @@ min-width: 300px;
   border-radius: 5px;
   font-family: "Permanent Marker", sans-serif;
   font-weight: bolder;
+  box-sizing: border-box;
   }
   .contact-container {
     display: flex;
