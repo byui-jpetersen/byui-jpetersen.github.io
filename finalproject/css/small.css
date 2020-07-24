@@ -31,6 +31,10 @@ body {
   font-family: "Permanent Marker", sans-serif;
   font-weight: bolder;
 }
+
+ul {
+  text-align: left;
+}
 .navigation a:not(:first-child) {
   display: none;
 }
